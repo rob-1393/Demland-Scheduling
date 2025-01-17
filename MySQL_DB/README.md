@@ -1,7 +1,7 @@
 # Warning:
 I have not tested any of this on any non-debian-based distribution, nor Windows or MacOS.
 
-#### How to add the database:
+# How to add the database:
 
 `mysqldump -u root -p --single-transaction DatabaseName > DatabaseFileName.sql`
 
