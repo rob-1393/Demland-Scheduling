@@ -6,6 +6,4 @@ Additionally, I have not tested any of this on any non-debian-based distribution
 
 `mysql -u root -p GCUScheduling < GCUScheduling_backup.sql`
 
-The command to backup a database into a file is similar:
-
-`mysql -u root -p GCUScheduling > GCUScheduling_backup.sql`
+The command to backup a database into a file simply reverses the "<".
