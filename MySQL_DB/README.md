@@ -4,6 +4,6 @@ Additionally, I have not tested any of this on any non-debian-based distribution
 
 #### How to add the database:
 
-`mysql -u root -p GCUScheduling < GCUScheduling_backup.sql`
+`mysql -u root -p --single-transaction GCUScheduling < GCUScheduling_backup.sql`
 
 The command to backup a database into a file simply reverses the "<".
