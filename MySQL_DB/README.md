@@ -1,5 +1,5 @@
 # Warning:
-I have not tested any of this on any non-debian-based Linux distribution, nor Windows or MacOS, so I wouldn't be surprised if something goes awry.
+I have not tested any of this on anything not Debian, but I believe everything should work fine.
 
 # How to add the database:
 `mysql -u root -p DatabaseName < DatabaseFileName.sql`
