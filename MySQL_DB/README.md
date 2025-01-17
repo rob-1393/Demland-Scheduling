@@ -2,9 +2,8 @@
 I have not tested any of this on any non-debian-based distribution, nor Windows or MacOS.
 
 # How to add the database:
+`mysql -u root -p DatabaseName < DatabaseFileName.sql`
+
+The command to make a MySQL database into a file reverses the "<", adds the single-transaction flag, and uses the "mysqldump" command.
 
 `mysqldump -u root -p --single-transaction DatabaseName > DatabaseFileName.sql`
-
-The command to add a MySQL database from a file reverses the ">", removes the single-transaction flag, and uses the standard "mysql" command.
-
-`mysql -u root -p DatabaseName < DatabaseFileName.sql`
