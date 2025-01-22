@@ -1,5 +1,10 @@
-# Warning:
-I'm mainly working from Debian here. I'll write out a proper installation guide for Windows later. On Windows I recommend downloading the .sql file, reformatting the file contents, manually creating a database to use for the creation statements, and then running the script.
+# Windows Warning:
+I'm mainly working from Debian here; I'll write out a proper installation guide for Windows later. For now:
+
+1. Download the .sql file.
+2. Reformat the file contents (remove apostrophes/backquotes where applicable, such as in table creation table statements).
+3. Create a database to run in the creation statements.
+4. Run the script.
 
 # (Debian-based Linux) Installation of necessary packages:
 `sudo apt update && sudo apt upgrade`
