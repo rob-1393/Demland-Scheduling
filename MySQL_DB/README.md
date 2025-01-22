@@ -3,7 +3,7 @@ I'm mainly working from Debian here; I'll write out a proper installation guide 
 
 1. Download the .sql file.
 2. Reformat the file contents (remove apostrophes/backquotes where applicable, such as in table creation table statements).
-3. Create a database to run in the creation statements.
+3. Create a database to contextualize the creation statements.
 4. Run the script.
 
 # (Debian-based Linux) Installation of necessary packages:
