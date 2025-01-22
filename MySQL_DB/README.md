@@ -11,7 +11,7 @@ I'm mainly working from Debian here; I'll write out a proper installation guide 
 
 `sudo apt install libdbd-mysql-perl mysql-apt-config mysql-client mysql-common mysql-community-client mysql-community-client-core mysql-community-client-plugins mysql-community-server mysql-community-server-core`
 
-# How to add the database:
+# (CLI) How to add the database:
 `mysql -u root -p DatabaseName < DatabaseFileName.sql`
 
 The command to make a MySQL database into a file reverses the "<" and uses the "mysqldump" command.
