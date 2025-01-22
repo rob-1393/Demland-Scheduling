@@ -1,5 +1,3 @@
-Jackson and Robert.
-
 # Windows Warning:
 I'm mainly working from Debian here; I'll write out a proper installation guide for Windows later. For now:
 
