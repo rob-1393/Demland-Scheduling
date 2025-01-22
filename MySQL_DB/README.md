@@ -1,5 +1,5 @@
 # Warning:
-Mainly working from Debian here. On Windows I recommend downloading the .sql file, reformatting the file contents, manually creating a database to use for the creation statements, and then running the script. I'll write out a proper installation guide for Windows later.
+I'm mainly working from Debian here. I'll write out a proper installation guide for Windows later. On Windows I recommend downloading the .sql file, reformatting the file contents, manually creating a database to use for the creation statements, and then running the script.
 
 # (Debian-based Linux) Installation of necessary packages:
 `sudo apt update && sudo apt upgrade`
