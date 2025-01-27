@@ -8,3 +8,5 @@ that we can then put into our database
 
 def main():
     print("Hello world!")
+
+main()
