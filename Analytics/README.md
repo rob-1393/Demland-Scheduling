@@ -12,6 +12,14 @@ Download latest version of GIT
 Download latest version of Visual Studio Code
 
 ## Steps 
+- Open your terminal (Windows or linux doesn't matter)
+- Input the following:
+```
+git configure --global user.name "[your github name]"
+    
+git configure --global user.email "[your github email]"
+```
+- Without these things configured Git gets mad
 - Once VSCode is installed, install the Github Repositories extension
     (far left hand side, should be the 4th icon down)
 - Press CTRL + SHFT + P to open the search menu
