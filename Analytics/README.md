@@ -28,11 +28,11 @@ https://youtu.be/i_23KUAEtUM?si=o5gkezpWYb9Dzj4i
 # CURRENT PLANS
 tableTranslation.py is not yet done, the plan is for that script to do the brunt of the translation.
     
-    We may break the data into two files:
+We may break the data into two files:
 
-    - one for the class setup
+- one for the class setup
 
-    - one for the professors, and their connected classes
+- one for the professors, and their connected classes
 
 We can then potentially use another script to input the translated data and input it to a .sql file.
 
