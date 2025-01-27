@@ -31,8 +31,8 @@ tableTranslation.py is not yet done, the plan is for that script to do the brunt
     We may break the data into two files:
 
     - one for the class setup
-    
+
     - one for the professors, and their connected classes
 
 We can then potentially use another script to input the translated data and input it to a .sql file.
-   
+
