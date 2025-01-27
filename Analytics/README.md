@@ -8,6 +8,7 @@ Feel free to use something else, but this way is very easy and convenient.
 
 ## Resources
 Download latest version of GIT
+
 Download latest version of Visual Studio Code
 
 ## Steps 
