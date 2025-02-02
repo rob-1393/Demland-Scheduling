@@ -35,7 +35,7 @@ mysqldump -u root -p DatabaseName > DatabaseFileName.sql
 
 # Using the Conversion Script:
 
-#### Linux:
+### Linux:
 
 The following creates a virtual environment for running pip. This may be unnecessary on other distributions. [Consider the README here](./ConversionScript).
 
