@@ -2,7 +2,7 @@
 
 
 ### Windows:
-WARNING: The work for this has been done mainly from Debian-based Linux; I'll write a proper guide for Windows later. For now:
+WARNING: The work for this has been done mainly from Debian-based Linux; I'll write a full/proper guide for Windows later. For now:
 
 1. Download the .sql file.
 2. Reformat the file contents (remove apostrophes/backquotes where applicable, such as in table creation table statements).
