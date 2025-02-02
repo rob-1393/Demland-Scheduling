@@ -9,7 +9,7 @@ WARNING: The work for this has been done mainly from Debian-based Linux; I'll wr
 3. Create a database (to contextualize the creation statements).
 4. Run the SQL.
 
-If you encounter problems using Windows, feel free to ask for help in the server.
+If you encounter problems, don't forget to ask for help in the server.
 
 ### Linux:
 
