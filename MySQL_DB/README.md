@@ -37,7 +37,7 @@ mysql -u root -p DatabaseName < DatabaseFileName.sql
 mysqldump -u root -p DatabaseName > DatabaseFileName.sql
 ```
 
- If the execution hangs, add "--single-transaction" after the database name flag (or the name itself).
+If the execution hangs, add "--single-transaction" after the database name flag (or the name itself).
 
 # Using the Conversion Script:
 
