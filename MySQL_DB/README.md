@@ -4,10 +4,9 @@
 ### Windows:
 WARNING: The work for this has been done mainly from Debian-based Linux; I'll write a full/proper guide for Windows later. For now:
 
-1. Download the .sql file.
-2. Reformat the file contents (remove apostrophes/backquotes where applicable, such as in table creation table statements).
-3. Create a database (to contextualize the creation statements).
-4. Run the SQL.
+1. Download the Windows-specific SQL file.
+2. Create a database (to contextualize the creation statements).
+3. Run the SQL.
 
 If you encounter problems, don't forget to ask for help in the server.
 
