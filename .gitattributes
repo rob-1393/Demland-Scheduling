@@ -1,0 +1,2 @@
+# This ensures that the SQL files are recognized by Github.
+*.sql linguist-language=SQL
