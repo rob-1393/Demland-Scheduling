@@ -21,11 +21,9 @@ sudo apt install libdbd-mysql-perl mysql-apt-config mysql-client mysql-common my
 ```
 
 #### How to add the database:
-`mysql -u root -p DatabaseName < DatabaseFileName.sql`
+Import: `mysql -u root -p DatabaseName < DatabaseFileName.sql`
 
-The command to make a MySQL database into a file reverses the "<" and uses the "mysqldump" command.
-
-`mysqldump -u root -p DatabaseName > DatabaseFileName.sql`
+Export: `mysqldump -u root -p DatabaseName > DatabaseFileName.sql`
 
  If the execution hangs, add "--single-transaction" after the database name flag (i.e.: -p DatabaseName <here>).
 
