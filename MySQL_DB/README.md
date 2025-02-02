@@ -1,36 +1,43 @@
-# Adding the Database:
+# Using the SQL Database:
 
+## Installation of MySQL:
 
 ### Windows:
-WARNING: The work for this has been done mainly from Debian-based Linux; I'll write a full/proper guide for Windows later. For now:
 
-1. Download the Windows-specific SQL file.
-2. Create a database (to contextualize the creation statements).
-3. Run the SQL.
-
-If you encounter problems, don't forget to ask for help in the server.
+1. Download MySQL server [here](https://dev.mysql.com/downloads/mysql/).
+2. Set up a local MySQL server. The following guide might help [here](https://www.youtube.com/watch?v=u96rVINbAUI).
 
 ### Linux:
 
-#### Installing necessary packages:
+
 ```
 sudo apt update && sudo apt upgrade
 
 sudo apt install libdbd-mysql-perl mysql-apt-config mysql-client mysql-common mysql-community-client mysql-community-client-core mysql-community-client-plugins mysql-community-server mysql-community-server-core
 ```
 
-#### How to add the database:
-Import:
+## Importing/Exporting (OS Agnostic):
+
+1. Create a database:
+```
+mysql -u root -p
+
+mysql> create database DatabaseName;
+mysql> show databases;
+```
+Please note that upon the original installation, you might need to set up user access to MySQL. Alternatively, running `mysql` as Administrator  or root should work.
+
+#### Import:
 ```
 mysql -u root -p DatabaseName < DatabaseFileName.sql
 ```
 
-Export:
+#### Export:
 ```
 mysqldump -u root -p DatabaseName > DatabaseFileName.sql
 ```
 
- If the execution hangs, add "--single-transaction" after the database name flag (or maybe the name itself).
+ If the execution hangs, add "--single-transaction" after the database name flag (or the name itself).
 
 # Using the Conversion Script:
 
