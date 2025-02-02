@@ -1,4 +1,4 @@
-# Using the SQL Database:
+# Using the MySQL Database:
 
 ## Installation of MySQL:
 
