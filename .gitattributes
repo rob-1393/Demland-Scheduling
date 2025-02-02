@@ -1,7 +1,6 @@
 # This ensures that the files are recognized by Github.
 *.sql linguist-detectable=true
 *.sql linguist-language=sql
-*.sql text
 
 *.py linguist-language=Python
 *.md text diff=markdown
