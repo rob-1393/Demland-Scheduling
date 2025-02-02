@@ -31,11 +31,8 @@ Export:
 mysqldump -u root -p DatabaseName > DatabaseFileName.sql
 ```
 
- If the execution hangs, add "--single-transaction" after the database name flag (i.e.):
-```
-mysql -u root -p DatabaseName --single-transaction < DatabaseFileName.sql
-mysqldump -u root -p DatabaseName --single-transaction > DatabaseFileName.sql
-```
+ If the execution hangs, add "--single-transaction" after the database name flag (or maybe the name itself).
+
 # Using the Conversion Script:
 
 #### Linux:
