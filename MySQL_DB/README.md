@@ -20,4 +20,4 @@ The command to make a MySQL database into a file reverses the "<" and uses the "
 
 `mysqldump -u root -p DatabaseName > DatabaseFileName.sql`
 
- If the execution hangs, add "--single-transaction" after the other flags (-p DatabaseName <here>).
+ If the execution hangs, add "--single-transaction" after the database name flag (i.e.: -p DatabaseName <here>).
