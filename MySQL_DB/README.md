@@ -31,7 +31,7 @@ Export: `mysqldump -u root -p DatabaseName > DatabaseFileName.sql`
 
 #### Linux:
 
-The following creates a virtual environment for running pip. This may be unnecessary on other distributions. [Consider the README here](./ConversionScript[Go to the heading](README.md#this-is-a-heading-with-spaces)).
+The following creates a virtual environment for running pip. This may be unnecessary on other distributions. [Consider the README here](./ConversionScript).
 
 ```
 sudo apt install python3-venv
