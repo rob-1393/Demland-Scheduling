@@ -14,9 +14,11 @@ If you encounter problems using Windows, feel free to ask for help in the server
 ### Linux:
 
 #### Installing necessary packages:
-`sudo apt update && sudo apt upgrade`
+```
+sudo apt update && sudo apt upgrade
 
-`sudo apt install libdbd-mysql-perl mysql-apt-config mysql-client mysql-common mysql-community-client mysql-community-client-core mysql-community-client-plugins mysql-community-server mysql-community-server-core`
+sudo apt install libdbd-mysql-perl mysql-apt-config mysql-client mysql-common mysql-community-client mysql-community-client-core mysql-community-client-plugins mysql-community-server mysql-community-server-core
+```
 
 #### How to add the database:
 `mysql -u root -p DatabaseName < DatabaseFileName.sql`
