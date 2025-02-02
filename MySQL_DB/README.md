@@ -6,7 +6,7 @@
 
 1. Download MySQL Server [here](https://dev.mysql.com/downloads/mysql/).
 2. Download MySQL Community Workbench [here](https://dev.mysql.com/downloads/workbench/).
-3. Set up a local MySQL server & Workbench. The following guide might help [here](https://www.youtube.com/watch?v=u96rVINbAUI).
+3. Set up a local MySQL Server & Workbench. The following guide might help [here](https://www.youtube.com/watch?v=u96rVINbAUI).
 
 ### Linux:
 
@@ -16,6 +16,7 @@ sudo apt update && sudo apt upgrade
 
 sudo apt install libdbd-mysql-perl mysql-apt-config mysql-client mysql-common mysql-community-client mysql-community-client-core mysql-community-client-plugins mysql-community-server mysql-community-server-core
 ```
+Note: The guide in the Windows section might be useful for MySQL configurations.
 
 ## Importing/Exporting (OS Agnostic):
 
