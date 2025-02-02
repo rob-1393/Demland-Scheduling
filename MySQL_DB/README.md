@@ -4,7 +4,7 @@
 
 ### Windows:
 
-1. Download MySQL server [here](https://dev.mysql.com/downloads/mysql/).
+1. Download MySQL Server [here](https://dev.mysql.com/downloads/mysql/).
 2. Download MySQL Community Workbench [here](https://dev.mysql.com/downloads/workbench/).
 3. Set up a local MySQL server & Workbench. The following guide might help [here](https://www.youtube.com/watch?v=u96rVINbAUI).
 
