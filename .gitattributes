@@ -1,5 +1,8 @@
 # This files ensures that all code is recognized by Github.
-# Sadly, enabling this to show SQL ends up domineering the language stats because of the large database file. We could ignore specific files, but that'd be returning to square one. Additionally, it is not possible (afaik) to display language stats based on the number of files using a given language.
+# Sadly, enabling this to show SQL ends up domineering the language stats because of the large database file.
+We could ignore specific files, but that'd be returning to square one.
+Additionally, it is not possible (afaik) to display language stats based on the number of files using a given language.
+
 *.sql linguist-detectable=true
 *.sql linguist-language=sql
 
