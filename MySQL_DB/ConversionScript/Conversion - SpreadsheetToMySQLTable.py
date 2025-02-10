@@ -24,9 +24,9 @@ Read the comments for more information about everything else.
 # 2. Connect to MySQL.
 db = mysql.connect(
     host="localhost",     # Currently default (will work as-is). Either replace or optionally add a specific port if not on the default 3306.
-    user="user",          # Replace with your MySQL username [default is root].
-    password="password",  # Replace with your MySQL password.
-    database="database"   # Replace with your MySQL database name.
+    user="root",          # Replace with your MySQL username [default is root].
+    password="sql.C-218811-",  # Replace with your MySQL password.
+    database="capstone"   # Replace with your MySQL database name.
 )
 
 cursor = db.cursor()
