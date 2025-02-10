@@ -13,4 +13,3 @@ These tables are the cumulative data of various tables given to us by Demland.
 - I got rid of as many duplicate rows as I could, but its possible that there are some that persist
 
 You shouldn't need to edit this, its simply here so that everyone has it.
-
