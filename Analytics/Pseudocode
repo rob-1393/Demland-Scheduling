@@ -12,7 +12,7 @@ For each class in Class_List Do
   (Prefer professor with most experience first?)
 
   IF Possible_Professors is not empty THEN
-    Best_Professor = Select professor with the highest occurence in Teaching_History
+    Best_Professor = Select professor with the highest occurence in Teaching_History for said class
   ELSE
     Best_Professor = Select professor from Professor_List with fewest assigned classes
 
