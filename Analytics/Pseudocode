@@ -1,6 +1,6 @@
 def Main():
 
-Begin
+
 Class_List = Retrieve list of all classes needing assignments
 Professor_List = Retrieve list of all avalible professors
 Teaching_History = Retrieve pass teaching assignments
@@ -22,8 +22,4 @@ For each class in Class_List Do
 END FOR
 
 RETURN ASSIGNMENTS
-
-End
-
 Main()
-
