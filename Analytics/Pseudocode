@@ -23,5 +23,7 @@ END FOR
 
 RETURN ASSIGNMENTS
 
-END
+End
+
+Main()
 
