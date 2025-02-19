@@ -10,6 +10,7 @@
 
 ### Linux:
 
+Install the MySQL repo (eg. [the apt repo](https://dev.mysql.com/downloads/repo/apt/)).
 
 ```
 sudo apt update && sudo apt upgrade
