@@ -1,0 +1,25 @@
+def Main():
+
+
+Class_List = Retrieve list of all classes needing assignments
+Professor_List = Retrieve list of all avalible professors
+Teaching_History = Retrieve pass teaching assignments
+
+Assignments = Empty dictionary (class -> professor)
+
+For each class in Class_List Do
+  Possible_Professors = Find professors in Teaching_History who taught this class before
+  (Prefer professor with most experience first?)
+
+  IF Possible_Professors is not empty THEN
+    Best_Professor = Select professor with the highest occurence in Teaching_History for said class
+  ELSE
+    Best_Professor = Select professor from Professor_List with fewest assigned classes
+
+  Assignments[class] <- Best_Professor
+  Update professor's assigned class count
+
+END FOR
+
+RETURN ASSIGNMENTS
+Main()
