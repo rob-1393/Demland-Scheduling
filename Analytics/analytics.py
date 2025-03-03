@@ -24,9 +24,12 @@ def main():
 
 main()
 
+"""
+These comments act as a progress bar (orange = completed)
+
 # PROCESSES NEEDED:
 #
-# Read the data
+# Read the data     """
 # Look at previous dates
 # Project dates forward >
 #   Decide timeframe for data (3 semesters)
