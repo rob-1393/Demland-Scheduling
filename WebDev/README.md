@@ -1,5 +1,6 @@
 # Webdevelopment
 Ken and Max
+
 #DemlandDataCS
 From the SSMS, we connected the demo table data to the SSMS so that the data can be displayed in the SSMS table. Using SSMS table data, we translated the data into a C# file, using acceptable SQL values.
 The reason for this is that the C# file maps to the SSMS table using SQL values and column names. 
@@ -10,6 +11,8 @@ Public DbSet<DemlandData> DemlandData { get; set; } - Maps to the DemlandData.cs
 
 #Index.cshtml.cs
 The User has to map to the correct name spaces for DemlandData amd ApplicationDbContext.
+
+The code below that can be seen in the index creates a string that is connecting and displaying the data model and ApplicationDbContext document, to list the data onto a html page:
 
 namespace demlandscheduling.Pages.Courses
 {
@@ -31,3 +34,6 @@ namespace demlandscheduling.Pages.Courses
         }
     }
 }
+
+#AppSettings.json
+Under default connection, 
