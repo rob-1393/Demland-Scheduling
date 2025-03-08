@@ -1,0 +1,50 @@
+@page
+@model demlandscheduling.Pages.Pages_FilterPage
+@{
+    ViewData["Title"] = "Filter Classes";
+}
+
+<h2>Filter Classes</h2>
+
+<form method="get">
+    <div>
+        <label for="course">Course</label>
+        <input type="text" id="course" name="course" value="@Model.Filter.Course" />
+    </div>
+    <div>
+        <label for="teacherDescrip">Teacher</label>
+        <input type="text" id="teacherDescrip" name="teacherDescrip" value="@Model.Filter.TeacherDescrip" />
+    </div>
+    <div>
+        <label for="days">Days</label>
+        <input type="text" id="days" name="days" value="@Model.Filter.Days" />
+    </div>
+    <div>
+        <label for="startTime">Start Time</label>
+        <input type="time" id="startTime" name="startTime" value="@Model.Filter.StartTime" />
+    </div>
+    <div>
+        <label for="endTime">End Time</label>
+        <input type="time" id="endTime" name="endTime" value="@Model.Filter.EndTime" />
+    </div>
+    <div>
+        <label for="teacherEmail">Teacher Email</label>
+        <input type="email" id="teacherEmail" name="teacherEmail" value="@Model.Filter.Email" />
+    </div>
+    <div>
+        <button type="submit">Filter</button>
+    </div>
+</form>
+
+@if (Model.Classes != null)
+{
+    <h3>Filtered Classes</h3>
+    <ul>
+        @foreach (var item in Model.Classes)
+        {
+            <li>
+                @item.Course - @item.Section - @item.TeacherDescrip - @item.StartTime - @item.EndTime
+            </li>
+        }
+    </ul>
+}

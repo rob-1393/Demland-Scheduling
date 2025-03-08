@@ -7,9 +7,18 @@ namespace demlandscheduling.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
-            {
+        {
+        }
 
-            }
-        public DbSet<CourseData> CourseData {get; set; }
+        // Define DbSet for DemlandData
+        public DbSet<DemlandData> DemlandData { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configure DemlandData as keyless (if it doesn't have a primary key)
+            modelBuilder.Entity<DemlandData>().HasNoKey();
+        }
     }
 }

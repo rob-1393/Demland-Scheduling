@@ -1,9 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using demlandscheduling.Data; //Namespace for ApplicationDbContext
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Set up Serilog as the logging provider
+
+builder.Host.UseSerilog((ctx, lc) => lc
+    .WriteTo.File("access.log", rollingInterval: RollingInterval.Day)
+    .WriteTo.Console());
 
 //Register the DbContext with SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
