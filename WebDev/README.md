@@ -11,3 +11,23 @@ Public DbSet<DemlandData> DemlandData { get; set; } - Maps to the DemlandData.cs
 #Index.cshtml.cs
 The User has to map to the correct name spaces for DemlandData amd ApplicationDbContext.
 
+namespace demlandscheduling.Pages.Courses
+{
+    public class IndexModel : PageModel
+    {
+        private readonly ApplicationDbContext _context;
+
+        public IndexModel(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public IList<DemlandData>? DemlandDataList { get; set; }  // Change to DemlandDataList
+
+        public async Task OnGetAsync()
+        {
+            // Fetch data from the 'DemlandData' table in SQL Server
+            DemlandDataList = await _context.DemlandData.ToListAsync();  // Query from DemlandData table
+        }
+    }
+}
