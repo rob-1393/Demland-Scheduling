@@ -1,5 +1,5 @@
 # ANALYTICS
-Ben, Jackson and Landon.
+Ben and Jackson.
 
 # SETUP
 This is a brief rundown of how I set up my machines to clone and edit the Github repo.
