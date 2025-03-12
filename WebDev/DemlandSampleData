@@ -1,0 +1,39 @@
+select * from DemlandData
+
+
+INSERT INTO DemlandData (AgreementNumber, SchedID, DeliveryMethod, Course, Section, Days, StartTime, EndTime, Cr, Max, Reg, TeacherDescrip, Email, SecondaryTeachers, ClassStart, ClassEnd, ClassSchedDescrip)
+VALUES
+('2598430-029052', '2598430', 'On-Ground Course', 'BME-471', 'TR230A', 'T R', '2:30:00 PM', '3:25:00 PM', 2, 24, 24, 'Kyle Jones', 'Kyle.Jones@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Biomedical Design Elements I'),
+('2598562-056303', '2598562', 'On-Ground Course', 'EEE-202', 'WF100A', 'W F', '1:00:00 PM', '2:20:00 PM', 3, 38, 30, 'Armando Rodriguez', 'Armando.Rodriguez@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Circuits'),
+('2598563-056303', '2598563', 'On-Ground Course', 'EEE-202', 'WF1100A', 'W F', '11:00:00 AM', '12:20:00 PM', 3, 38, 38, 'Armando Rodriguez', 'Armando.Rodriguez@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Circuits'),
+('2598564-056303', '2598564', 'On-Ground Course', 'EEE-202', 'WF700A', 'W F', '7:00:00 AM', '8:20:00 AM', 3, 38, 16, 'Armando Rodriguez', 'Armando.Rodriguez@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Circuits'),
+('2598566-056303', '2598566', 'On-Ground Course', 'EEE-202L', 'R700A', 'R', '7:00:00 AM', '9:30:00 AM', 1, 24, 20, 'Armando Rodriguez', 'Armando.Rodriguez@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Circuits Lab'),
+('2598567-056303', '2598567', 'On-Ground Course', 'EEE-202L', 'R945A', 'R', '9:45:00 AM', '12:15:00 AM', 1, 24, 24, 'Armando Rodriguez', 'Armando.Rodriguez@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Circuits Lab'),
+('2598568-027539', '2598568', 'On-Ground Course', 'EEE-202L', 'T700A', 'T', '7:00:00 AM', '9:30:00 AM', 1, 24, 9, 'Michael Awaah', 'Michael.Awaah@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Circuits Lab'),
+('2598569-050871', '2598569', 'On-Ground Course', 'EEE-202L', 'T945A', 'T', '9:45:00 AM', '12:15:00 PM', 1, 24, 23, 'Amr Metwally', 'Amr.Metwally@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Circuits Lab'),
+('2598570-050871', '2598570', 'On-Ground Course', 'EEE-202L', 'W945A', 'W', '9:45:00 AM', '12:15:00 PM', 1, 24, 4, 'Amr Metwally', 'Amr.Metwally@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Circuits Lab'),
+('2598571-041519', '2598571', 'On-Ground Course', 'EEE-213', 'WF945A', 'W F', '9:45:00 AM', '11:05:00 AM', 3, 37, 30, 'Luciano Albuquerque', 'Luciano.Albuquerque@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Signals and Systems'),
+('2598574-041519', '2598574', 'On-Ground Course', 'EEE-320', 'TR945A', 'T R', '9:45:00 AM', '12:15:00 PM', 4, 24, 16, 'Luciano Albuquerque', 'Luciano.Albuquerque@gcu.edu', '--', '9/5/2023', '12/17/2023', 'Electronics and Devices & Lab');
+
+Drop table DemlandData
+CREATE TABLE DemlandData (
+    AgreementNumber VARCHAR(50),  -- Assuming AgreementNumber is a string, max length 50
+    SchedID VARCHAR(50),          -- Assuming SchedID is a string, max length 50
+    DeliveryMethod VARCHAR(50),   -- DeliveryMethod is a string
+    Course VARCHAR(50),           -- Course name is a string
+    Section VARCHAR(50),          -- Section is a string
+    Days VARCHAR(10),             -- Days is a string (e.g., "T R" or "W F")
+    StartTime Time,               -- StartTime is a time format
+    EndTime TIME,                 -- EndTime is a time format
+    Cr INT,                       -- Cr is an integer
+    Max INT,                      -- Max is an integer
+    Reg INT,                      -- Reg is an integer
+    TeacherDescrip VARCHAR(100),  -- TeacherDescrip is a string
+    Email VARCHAR(100),           -- Email is a string
+    SecondaryTeachers VARCHAR(100), -- SecondaryTeachers is a string (assuming it could be a list or text)
+    ClassStart DATE,              -- ClassStart is a date format
+    ClassEnd DATE,                -- ClassEnd is a date format
+    ClassSchedDescrip VARCHAR(100) -- ClassSchedDescrip is a string
+);
+
+
