@@ -1,0 +1,564 @@
+2025-03-12 20:42:34.122 -07:00 [INF] User profile is available. Using 'C:\Users\Mbarn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-12 20:42:34.307 -07:00 [INF] Now listening on: http://localhost:5276
+2025-03-12 20:42:34.310 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 20:42:34.311 -07:00 [INF] Hosting environment: Development
+2025-03-12 20:42:34.312 -07:00 [INF] Content root path: C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling
+2025-03-12 20:42:47.086 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 20:42:47.110 -07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-12 20:42:47.166 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 20:42:47.197 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 20:42:47.390 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 20:42:48.100 -07:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 20:42:48.125 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 20:42:48.129 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:42:48.131 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:42:48.194 -07:00 [INF] Executed page /Index in 993.5554ms
+2025-03-12 20:42:48.200 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 20:42:48.213 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 1128.8045ms
+2025-03-12 20:42:48.218 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:42:48.218 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:42:48.218 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:42:48.218 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:42:48.218 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:42:48.222 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:42:48.234 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.234 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.235 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.239 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.251 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.253 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.325 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:42:48.325 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:42:48.325 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:42:48.326 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.327 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.330 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.330 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:42:48.330 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:42:48.330 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:42:48.331 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 114.039ms
+2025-03-12 20:42:48.332 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 114.7213ms
+2025-03-12 20:42:48.333 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 115.744ms
+2025-03-12 20:42:48.335 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.344 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.345 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:48.356 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 134.2411ms
+2025-03-12 20:42:48.357 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 139.7493ms
+2025-03-12 20:42:48.358 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 140.2387ms
+2025-03-12 20:42:50.058 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 20:42:50.060 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 20:42:50.061 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 20:42:50.072 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 20:42:50.102 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 20:42:50.106 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 20:42:50.107 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:42:50.108 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:42:50.113 -07:00 [INF] Executed page /Index in 50.631ms
+2025-03-12 20:42:50.114 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 20:42:50.116 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 58.3116ms
+2025-03-12 20:42:50.134 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:42:50.137 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.137 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:42:50.137 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:42:50.137 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:42:50.138 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:42:50.138 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:42:50.141 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.143 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:42:50.148 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.153 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.154 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:42:50.154 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.155 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.157 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:42:50.158 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:42:50.159 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.160 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 26.2152ms
+2025-03-12 20:42:50.163 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.163 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:42:50.165 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.167 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 29.0813ms
+2025-03-12 20:42:50.170 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 32.5291ms
+2025-03-12 20:42:50.171 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.172 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 34.6777ms
+2025-03-12 20:42:50.178 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 40.7599ms
+2025-03-12 20:42:50.199 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.202 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:42:50.203 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:50.204 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 66.6743ms
+2025-03-12 20:42:51.287 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 20:42:51.290 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 20:42:51.291 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 20:42:51.295 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 20:42:51.359 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 20:42:51.362 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 20:42:51.363 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:42:51.364 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:42:51.367 -07:00 [INF] Executed page /Index in 74.9233ms
+2025-03-12 20:42:51.368 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 20:42:51.369 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 82.0855ms
+2025-03-12 20:42:51.394 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:42:51.397 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:42:51.397 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:42:51.397 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:42:51.397 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:42:51.397 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:42:51.397 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.401 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.403 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.405 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.406 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.408 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.410 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:42:51.411 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:42:51.412 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:42:51.413 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:42:51.414 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:42:51.414 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:42:51.415 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.416 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.417 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.418 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.419 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.420 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:51.421 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 23.9485ms
+2025-03-12 20:42:51.422 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 24.6028ms
+2025-03-12 20:42:51.423 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 28.9473ms
+2025-03-12 20:42:51.424 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 26.332ms
+2025-03-12 20:42:51.425 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 27.1676ms
+2025-03-12 20:42:51.425 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 28.0267ms
+2025-03-12 20:42:52.029 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 20:42:52.033 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 20:42:52.034 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 20:42:52.035 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 20:42:52.040 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 20:42:52.041 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 20:42:52.042 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:42:52.043 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:42:52.044 -07:00 [INF] Executed page /Index in 9.3912ms
+2025-03-12 20:42:52.045 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 20:42:52.046 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 16.6999ms
+2025-03-12 20:42:52.067 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:42:52.070 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.071 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:42:52.071 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:42:52.071 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:42:52.071 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:42:52.071 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:42:52.075 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:42:52.075 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.078 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.081 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.084 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.087 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.089 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.091 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:42:52.092 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:42:52.113 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:42:52.115 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:42:52.115 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:42:52.115 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 48.0849ms
+2025-03-12 20:42:52.116 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.118 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.120 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.123 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.124 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.128 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 57.379ms
+2025-03-12 20:42:52.129 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 58.2488ms
+2025-03-12 20:42:52.130 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 59.2153ms
+2025-03-12 20:42:52.131 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 59.8891ms
+2025-03-12 20:42:52.132 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 61.1597ms
+2025-03-12 20:42:52.757 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 20:42:52.759 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 20:42:52.761 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 20:42:52.762 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 20:42:52.767 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 20:42:52.769 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 20:42:52.771 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:42:52.772 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:42:52.774 -07:00 [INF] Executed page /Index in 12.151ms
+2025-03-12 20:42:52.775 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 20:42:52.777 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 19.2449ms
+2025-03-12 20:42:52.801 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:42:52.804 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:42:52.804 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:42:52.804 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.804 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:42:52.804 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:42:52.804 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:42:52.808 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.811 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.815 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:42:52.816 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.818 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.821 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.824 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:42:52.825 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:42:52.827 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.829 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:42:52.830 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:42:52.832 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:42:52.832 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.833 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.834 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 33.744ms
+2025-03-12 20:42:52.835 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.837 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.838 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:42:52.839 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 35.0417ms
+2025-03-12 20:42:52.841 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 36.3943ms
+2025-03-12 20:42:52.847 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 42.9611ms
+2025-03-12 20:42:52.849 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 44.316ms
+2025-03-12 20:42:52.865 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 60.3272ms
+2025-03-12 20:43:14.252 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 20:43:14.254 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 20:43:14.256 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 20:43:14.257 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 20:43:14.262 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 20:43:14.265 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 20:43:14.266 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:43:14.267 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:43:14.269 -07:00 [INF] Executed page /Index in 12.0211ms
+2025-03-12 20:43:14.270 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 20:43:14.271 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 19.3411ms
+2025-03-12 20:43:14.293 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:43:14.296 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.296 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:43:14.296 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:43:14.296 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:43:14.297 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:43:14.297 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:43:14.299 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.300 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:43:14.302 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.306 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.308 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.311 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.313 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:43:14.313 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.314 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:43:14.316 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:43:14.317 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:43:14.317 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:43:14.318 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.318 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 25.7729ms
+2025-03-12 20:43:14.319 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.320 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.321 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.322 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:14.323 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 25.7393ms
+2025-03-12 20:43:14.325 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 29.0057ms
+2025-03-12 20:43:14.326 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 29.7729ms
+2025-03-12 20:43:14.327 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 30.5992ms
+2025-03-12 20:43:14.328 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 32.0725ms
+2025-03-12 20:43:18.983 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/Privacy - null null
+2025-03-12 20:43:18.985 -07:00 [INF] Executing endpoint '/Privacy'
+2025-03-12 20:43:18.989 -07:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2025-03-12 20:43:18.990 -07:00 [INF] Executing handler method demlandscheduling.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2025-03-12 20:43:18.991 -07:00 [INF] Executed handler method OnGet, returned result .
+2025-03-12 20:43:18.992 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:43:18.993 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:43:18.996 -07:00 [INF] Executed page /Privacy in 6.1992ms
+2025-03-12 20:43:18.997 -07:00 [INF] Executed endpoint '/Privacy'
+2025-03-12 20:43:18.999 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/Privacy - 200 null text/html; charset=utf-8 15.3846ms
+2025-03-12 20:43:19.013 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:43:19.016 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.017 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:43:19.017 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:43:19.017 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:43:19.017 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:43:19.017 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:43:19.019 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:43:19.019 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.020 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.022 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.023 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.025 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.027 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.029 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:43:19.030 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:43:19.032 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:43:19.033 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:43:19.034 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:43:19.034 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 21.3493ms
+2025-03-12 20:43:19.035 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.037 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.038 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.040 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.042 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:19.046 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 29.2585ms
+2025-03-12 20:43:19.047 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 30.5793ms
+2025-03-12 20:43:19.048 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 31.4609ms
+2025-03-12 20:43:19.049 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 32.5092ms
+2025-03-12 20:43:19.050 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 33.4248ms
+2025-03-12 20:43:21.086 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/Privacy - null null
+2025-03-12 20:43:21.089 -07:00 [INF] Executing endpoint '/Privacy'
+2025-03-12 20:43:21.091 -07:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2025-03-12 20:43:21.092 -07:00 [INF] Executing handler method demlandscheduling.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2025-03-12 20:43:21.094 -07:00 [INF] Executed handler method OnGet, returned result .
+2025-03-12 20:43:21.095 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:43:21.096 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:43:21.100 -07:00 [INF] Executed page /Privacy in 7.7737ms
+2025-03-12 20:43:21.102 -07:00 [INF] Executed endpoint '/Privacy'
+2025-03-12 20:43:21.102 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/Privacy - 200 null text/html; charset=utf-8 16.1632ms
+2025-03-12 20:43:21.120 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:43:21.124 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:43:21.124 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:43:21.124 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:43:21.124 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.124 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:43:21.124 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:43:21.127 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.130 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.133 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.137 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.137 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:43:21.138 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.140 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:43:21.141 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:43:21.143 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:43:21.144 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.144 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:43:21.145 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:43:21.146 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.147 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.149 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.150 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 29.4017ms
+2025-03-12 20:43:21.151 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.152 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:21.156 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 32.5557ms
+2025-03-12 20:43:21.158 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 33.8172ms
+2025-03-12 20:43:21.159 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 34.7649ms
+2025-03-12 20:43:21.162 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 38.1022ms
+2025-03-12 20:43:21.176 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 51.9413ms
+2025-03-12 20:43:22.260 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/Privacy - null null
+2025-03-12 20:43:22.263 -07:00 [INF] Executing endpoint '/Privacy'
+2025-03-12 20:43:22.265 -07:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2025-03-12 20:43:22.266 -07:00 [INF] Executing handler method demlandscheduling.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2025-03-12 20:43:22.267 -07:00 [INF] Executed handler method OnGet, returned result .
+2025-03-12 20:43:22.281 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 20:43:22.282 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 20:43:22.285 -07:00 [INF] Executed page /Privacy in 18.9512ms
+2025-03-12 20:43:22.299 -07:00 [INF] Executed endpoint '/Privacy'
+2025-03-12 20:43:22.301 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/Privacy - 200 null text/html; charset=utf-8 40.8683ms
+2025-03-12 20:43:22.327 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 20:43:22.327 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 20:43:22.327 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 20:43:22.327 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 20:43:22.327 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 20:43:22.327 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 20:43:22.331 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.333 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.334 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.337 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.340 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.342 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.345 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 20:43:22.345 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 20:43:22.347 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 20:43:22.347 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 20:43:22.349 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 20:43:22.349 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 20:43:22.350 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.351 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.352 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.354 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.355 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.356 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 20:43:22.357 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 29.7614ms
+2025-03-12 20:43:22.358 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 31.0501ms
+2025-03-12 20:43:22.360 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 32.1133ms
+2025-03-12 20:43:22.360 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 33.0577ms
+2025-03-12 20:43:22.361 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 34.0906ms
+2025-03-12 20:43:22.362 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 34.8939ms
+2025-03-12 20:43:33.458 -07:00 [INF] Application is shutting down...
+2025-03-12 21:28:03.860 -07:00 [INF] User profile is available. Using 'C:\Users\Mbarn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-12 21:28:04.042 -07:00 [INF] Now listening on: http://localhost:5276
+2025-03-12 21:28:04.046 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 21:28:04.048 -07:00 [INF] Hosting environment: Development
+2025-03-12 21:28:04.049 -07:00 [INF] Content root path: C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling
+2025-03-12 21:28:07.723 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 21:28:07.738 -07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-12 21:28:07.799 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 21:28:07.830 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 21:28:07.930 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 21:28:08.641 -07:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 21:28:08.672 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 21:28:08.677 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 21:28:08.679 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 21:28:08.738 -07:00 [INF] Executed page /Index in 902.8006ms
+2025-03-12 21:28:08.746 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 21:28:08.757 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 1036.815ms
+2025-03-12 21:28:08.764 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 21:28:08.764 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 21:28:08.764 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 21:28:08.765 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 21:28:08.764 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 21:28:08.765 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 21:28:08.775 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.779 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.781 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.789 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.790 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.790 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.807 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 21:28:08.807 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 21:28:08.807 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 21:28:08.808 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 21:28:08.808 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 21:28:08.810 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.812 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.814 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 21:28:08.814 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.816 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.818 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.819 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 55.6858ms
+2025-03-12 21:28:08.820 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 55.5929ms
+2025-03-12 21:28:08.822 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:08.824 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 60.3471ms
+2025-03-12 21:28:08.825 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 61.4369ms
+2025-03-12 21:28:08.826 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 61.7149ms
+2025-03-12 21:28:08.834 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 70.5396ms
+2025-03-12 21:28:10.145 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 21:28:10.176 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 21:28:10.178 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 21:28:10.196 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 21:28:10.260 -07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 21:28:10.265 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 21:28:10.269 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 21:28:10.270 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 21:28:10.278 -07:00 [INF] Executed page /Index in 98.8593ms
+2025-03-12 21:28:10.281 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 21:28:10.285 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 140.1139ms
+2025-03-12 21:28:10.318 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 21:28:10.323 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.323 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 21:28:10.329 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.331 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 21:28:10.331 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 21:28:10.331 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 21:28:10.332 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 21:28:10.332 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 21:28:10.332 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 21:28:10.340 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.341 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.342 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.349 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.353 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 21:28:10.354 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 21:28:10.354 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 31.2475ms
+2025-03-12 21:28:10.356 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 38.6742ms
+2025-03-12 21:28:10.358 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.359 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.360 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.367 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 35.6754ms
+2025-03-12 21:28:10.368 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 36.604ms
+2025-03-12 21:28:10.372 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 21:28:10.378 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.381 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 48.5704ms
+2025-03-12 21:28:10.400 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.406 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 21:28:10.408 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:10.410 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 78.8125ms
+2025-03-12 21:28:11.135 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 21:28:11.140 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 21:28:11.142 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 21:28:11.145 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 21:28:11.215 -07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 21:28:11.219 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 21:28:11.222 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 21:28:11.224 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 21:28:11.237 -07:00 [INF] Executed page /Index in 94.179ms
+2025-03-12 21:28:11.239 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 21:28:11.242 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 107.6565ms
+2025-03-12 21:28:11.263 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 21:28:11.267 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.268 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 21:28:11.268 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 21:28:11.268 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 21:28:11.268 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 21:28:11.268 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 21:28:11.271 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.272 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 21:28:11.274 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.276 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.278 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.280 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.281 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 21:28:11.281 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.283 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 21:28:11.283 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 21:28:11.285 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 21:28:11.286 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.286 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 21:28:11.287 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 23.8831ms
+2025-03-12 21:28:11.288 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.289 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.290 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.291 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 22.9671ms
+2025-03-12 21:28:11.292 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:11.295 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 26.857ms
+2025-03-12 21:28:11.296 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 27.6076ms
+2025-03-12 21:28:11.297 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 28.326ms
+2025-03-12 21:28:11.301 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 32.4993ms
+2025-03-12 21:28:17.622 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/ - null null
+2025-03-12 21:28:17.627 -07:00 [INF] Executing endpoint '/Index'
+2025-03-12 21:28:17.628 -07:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-03-12 21:28:17.632 -07:00 [INF] Executing handler method demlandscheduling.Pages.Courses.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-03-12 21:28:17.635 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[AgreementNumber], [d].[ClassEnd], [d].[ClassSchedDescrip], [d].[ClassStart], [d].[Course], [d].[Cr], [d].[Days], [d].[DeliveryMethod], [d].[Email], [d].[EndTime], [d].[Max], [d].[Reg], [d].[SchedID], [d].[SecondaryTeachers], [d].[Section], [d].[StartTime], [d].[TeacherDescrip]
+FROM [DemlandData] AS [d]
+2025-03-12 21:28:17.638 -07:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-03-12 21:28:17.640 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-03-12 21:28:17.641 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-03-12 21:28:17.644 -07:00 [INF] Executed page /Index in 13.3849ms
+2025-03-12 21:28:17.646 -07:00 [INF] Executed endpoint '/Index'
+2025-03-12 21:28:17.647 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/ - 200 null text/html; charset=utf-8 24.8192ms
+2025-03-12 21:28:17.667 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - null null
+2025-03-12 21:28:17.670 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - null null
+2025-03-12 21:28:17.670 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - null null
+2025-03-12 21:28:17.670 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - null null
+2025-03-12 21:28:17.670 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.670 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - null null
+2025-03-12 21:28:17.671 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - null null
+2025-03-12 21:28:17.673 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.676 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.679 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.683 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\meb6a3a7zm-46ein0sx1k.gz'
+2025-03-12 21:28:17.684 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.686 -07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.688 -07:00 [INF] Sending file. Request path: 'css/site.b9sayid5wm.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\0hihaubtt6-b9sayid5wm.gz'
+2025-03-12 21:28:17.689 -07:00 [INF] Sending file. Request path: 'demlandscheduling.svgnti2ui0.styles.css'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz'
+2025-03-12 21:28:17.689 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.691 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.694 -07:00 [INF] Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\mjyoqukev6-xtxxf3hu2r.gz'
+2025-03-12 21:28:17.695 -07:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zl532ta6m0-493y06b0oq.gz'
+2025-03-12 21:28:17.695 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.696 -07:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\kdp67iu68t-o1o13a6vjx.gz'
+2025-03-12 21:28:17.696 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/css/site.b9sayid5wm.css - 200 700 text/css 26.1682ms
+2025-03-12 21:28:17.697 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 30.2665ms
+2025-03-12 21:28:17.699 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.700 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.702 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/demlandscheduling.svgnti2ui0.styles.css - 200 1168 text/css 31.2363ms
+2025-03-12 21:28:17.703 -07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-12 21:28:17.709 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/js/site.xtxxf3hu2r.js - 200 264 text/javascript 38.5263ms
+2025-03-12 21:28:17.710 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 39.5697ms
+2025-03-12 21:28:17.715 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5276/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 44.2833ms
+2025-03-12 21:28:25.810 -07:00 [INF] Application is shutting down...

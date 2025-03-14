@@ -1,0 +1,103 @@
+@page
+@model demlandscheduling.Pages.Filtering.FilterPage  
+
+@{
+    ViewData["Title"] = "Filter Classes";
+}
+
+<h2>Filter Classes</h2>
+
+<form method="get">
+    <!-- Course Filter -->
+    <div>
+        <label for="Course">Course</label>
+        <input type="text" id="Course" name="Course" value="@Model.Filter?.Course" />
+    </div>
+
+    <!-- Teacher Description Filter -->
+    <div>
+        <label for="TeacherDescrip">Teacher</label>
+        <input type="text" id="TeacherDescrip" name="TeacherDescrip" value="@Model.Filter?.TeacherDescrip" />
+    </div>
+
+    <!-- Days Filter -->
+    <div>
+        <label for="Days">Days</label>
+        <input type="text" id="Days" name="Days" value="@Model.Filter?.Days" />
+    </div>
+
+    <!-- Start Time Filter -->
+    <div>
+        <label for="StartTime">Start Time</label>
+        <input type="time" id="StartTime" name="StartTime" value="@Model.Filter?.StartTime?.ToString("HH:mm")" />
+    </div>
+
+    <!-- End Time Filter -->
+    <div>
+        <label for="EndTime">End Time</label>
+        <input type="time" id="EndTime" name="EndTime" value="@Model.Filter?.EndTime?.ToString("HH:mm")" />
+    </div>
+
+    <!-- Teacher Email Filter -->
+    <div>
+        <label for="Email">Teacher Email</label>
+        <input type="email" id="Email" name="Email" value="@Model.Filter?.Email" />
+    </div>
+
+    <!-- SchedID Filter -->
+    <div>
+        <label for="SchedID">Schedule ID</label>
+        <input type="text" id="SchedID" name="SchedID" value="@Model.Filter?.SchedID" />
+    </div>
+
+    <!-- Delivery Method Filter -->
+    <div>
+        <label for="DeliveryMethod">Delivery Method</label>
+        <input type="text" id="DeliveryMethod" name="DeliveryMethod" value="@Model.Filter?.DeliveryMethod" />
+    </div>
+
+    <!-- Secondary Teachers Filter -->
+    <div>
+        <label for="SecondaryTeachers">Secondary Teachers</label>
+        <input type="text" id="SecondaryTeachers" name="SecondaryTeachers" value="@Model.Filter?.SecondaryTeachers" />
+    </div>
+
+    <!-- Class Start Date Filter -->
+    <div>
+        <label for="ClassStart">Class Start Date</label>
+        <input type="date" id="ClassStart" name="ClassStart" value="@Model.Filter?.ClassStart?.ToString("yyyy-MM-dd")" />
+    </div>
+
+    <!-- Class End Date Filter -->
+    <div>
+        <label for="ClassEnd">Class End Date</label>
+        <input type="date" id="ClassEnd" name="ClassEnd" value="@Model.Filter?.ClassEnd?.ToString("yyyy-MM-dd")" />
+    </div>
+
+    <!-- Class Schedule Description Filter -->
+    <div>
+        <label for="ClassSchedDescrip">Class Schedule Description</label>
+        <input type="text" id="ClassSchedDescrip" name="ClassSchedDescrip" value="@Model.Filter?.ClassSchedDescrip" />
+    </div>
+
+    <div>
+        <button type="submit">Filter</button>
+    </div>
+</form>
+
+@if (Model.Classes != null && Model.Classes.Any())
+{
+    <h3>Filtered Classes</h3>
+    <ul>
+        @foreach (var item in Model.Classes)
+        {
+            <li>
+                @item.Course - @item.Section - @item.TeacherDescrip - @item.StartTime - @item.EndTime
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No classes found with the specified filters.</p>
+}

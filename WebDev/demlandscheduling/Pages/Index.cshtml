@@ -1,5 +1,5 @@
 ﻿@page
-@model demlandscheduling.Pages.Courses.IndexModel
+@model demlandscheduling.Pages.Index.IndexModel
 
 @{
     ViewData["Title"] = "DemlandData Table";
@@ -7,50 +7,57 @@
 
 <h2>DemlandData</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Agreement Number</th>
-            <th>Schedule ID</th>
-            <th>Delivery Method</th>
-            <th>Course</th>
-            <th>Section</th>
-            <th>Days</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Credits</th>
-            <th>Max Enrollment</th>
-            <th>Registered</th>
-            <th>Teacher Description</th>
-            <th>Email</th>
-            <th>Secondary Teachers</th>
-            <th>Class Start</th>
-            <th>Class End</th>
-            <th>Class Schedule Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.DemlandDataList)
-        {
+@if (Model.DemlandDataList != null && Model.DemlandDataList.Any())
+{
+    <table class="table">
+        <thead>
             <tr>
-                <td>@item.AgreementNumber</td>
-                <td>@item.SchedID</td>
-                <td>@item.DeliveryMethod</td>
-                <td>@item.Course</td>
-                <td>@item.Section</td>
-                <td>@item.Days</td>
-                <td>@item.StartTime?.ToString("hh:mm tt")</td> <!-- Format Start Time -->
-                <td>@item.EndTime?.ToString("hh:mm tt")</td>   <!-- Format End Time -->
-                <td>@item.Cr</td>
-                <td>@item.Max</td>
-                <td>@item.Reg</td>
-                <td>@item.TeacherDescrip</td>
-                <td>@item.Email</td>
-                <td>@item.SecondaryTeachers</td>
-                <td>@item.ClassStart?.ToString("MM/dd/yyyy")</td>  <!-- Format Date -->
-                <td>@item.ClassEnd?.ToString("MM/dd/yyyy")</td>    <!-- Format Date -->
-                <td>@item.ClassSchedDescrip</td>
+                <th>Agreement Number</th>
+                <th>Schedule ID</th>
+                <th>Delivery Method</th>
+                <th>Course</th>
+                <th>Section</th>
+                <th>Days</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Credits</th>
+                <th>Max Enrollment</th>
+                <th>Registered</th>
+                <th>Teacher Description</th>
+                <th>Email</th>
+                <th>Secondary Teachers</th>
+                <th>Class Start</th>
+                <th>Class End</th>
+                <th>Class Schedule Description</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.DemlandDataList)
+            {
+                <tr>
+                    <td>@item.AgreementNumber</td>
+                    <td>@item.SchedID</td>
+                    <td>@item.DeliveryMethod</td>
+                    <td>@item.Course</td>
+                    <td>@item.Section</td>
+                    <td>@item.Days</td>
+                    <td>@item.StartTime?.ToString("hh:mm tt")</td> <!-- Format Start Time -->
+                    <td>@item.EndTime?.ToString("hh:mm tt")</td>   <!-- Format End Time -->
+                    <td>@item.Cr</td>
+                    <td>@item.Max</td>
+                    <td>@item.Reg</td>
+                    <td>@item.TeacherDescrip</td>
+                    <td>@item.Email</td>
+                    <td>@item.SecondaryTeachers</td>
+                    <td>@item.ClassStart?.ToString("MM/dd/yyyy")</td>  <!-- Format Date -->
+                    <td>@item.ClassEnd?.ToString("MM/dd/yyyy")</td>    <!-- Format Date -->
+                    <td>@item.ClassSchedDescrip</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data available to display.</p> <!-- Message when the list is empty or null -->
+}
