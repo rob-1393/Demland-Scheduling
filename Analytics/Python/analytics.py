@@ -65,7 +65,41 @@ def analyze_history(excel_data):
     """
     History analytics
     """
-    
+
+    # This currently projects dates based on all prior classes.
+    # Puts the year of the start date into their own column for manipulation and calculation.
+    excel_data['StartYear'] = excel_data['ClassStart'].dt.year
+    excel_data['StartMonth'] = excel_data['ClassStart'].dt.month
+    excel_data['EndYear'] = excel_data['ClassEnd'].dt.year
+    excel_data['EndMonth'] = excel_data['ClassEnd'].dt.month
+
+    # Iterates through rows and creates 3 new columns with future dates.
+    for i, row in excel_data.iterrows():
+        startYear = row['StartYear']
+        startMonth = row['StartMonth']
+        endYear = row['EndYear']
+        endMonth = row['EndYear']
+
+        # Loops through a set number of times.
+        # The range of (1, 3) equals two. This can be set set higher, but any more columns and the visual output gets messy.
+        for numOfSemesters in range(1, 3):
+            if startMonth == 9:
+                startFutureDate = f"{startYear + 1}-01"
+                startYear += 1
+                startMonth = 1
+                # End dates.
+                endFutureDate = f"{endYear + 1}-04"
+                endYear += 1
+
+            elif startMonth == 1:
+                startFutureDate = f"{startYear}-09"
+                startMonth = 9
+                # End dates.
+                endFutureDate = f"{endYear}-12"
+        
+            # Store the future dates in new columns (one for each semester).
+            excel_data.at[i, f'{numOfSemesters}SemesterAhead_Start'] = startFutureDate
+            excel_data.at[i, f'{numOfSemesters}SemesterAhead_End'] = endFutureDate        
     
     return excel_data
 
@@ -75,7 +109,7 @@ def main():
     if excel_data is not None:
         excel_data = reorder_excel(excel_data)
     
-    
+    analyze_history(excel_data)
     print(excel_data)
     #print(excel_data.to_xml())
 
@@ -86,11 +120,12 @@ Orange = done/to that step
 
 # PROCESSES NEEDED:
 #
-# Read the data """
+# Read the data
 # Look at previous dates
 # Project dates forward >
-#   Decide timeframe for data (3 semesters)
+#   Decide timeframe for data (3 semesters) """
 #   Decide what classes should be scheduled
+#   Select only most recent classes to project dates forward
 #   Fix entries where single classes are listed twice under the 2 diff days
 # Decide Professor > 
 #   More times taught = priority
