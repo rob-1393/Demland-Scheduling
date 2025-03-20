@@ -1,5 +1,5 @@
 @page "/Filtering/FilterPage"
-@model demlandscheduling.Pages.Filtering.FilterPage  
+@model demlandscheduling.Pages.Filtering.FilterPage
 
 @{
     ViewData["Title"] = "Filter Classes";
@@ -11,19 +11,39 @@
     <!-- Course Filter -->
     <div>
         <label for="Course">Course</label>
-        <input type="text" id="Course" name="Course" value="@Model.Filter?.Course" />
+        <select id="Course" name="Course">
+            <option value="">Select Course</option>
+            @if (ViewData["Courses"] != null)
+            {
+                var courses = ViewData["Courses"] as List<string>;
+                if (courses != null)
+                {
+                    @foreach (var course in courses)
+                    {
+                        <option value="@course" selected="@((course == Model.Filter?.Course) ? "selected" : "")">@course</option>
+                    }
+                }
+            }
+        </select>
     </div>
 
     <!-- Teacher Description Filter -->
     <div>
         <label for="TeacherDescrip">Teacher</label>
-        <input type="text" id="TeacherDescrip" name="TeacherDescrip" value="@Model.Filter?.TeacherDescrip" />
-    </div>
-
-    <!-- Days Filter -->
-    <div>
-        <label for="Days">Days</label>
-        <input type="text" id="Days" name="Days" value="@Model.Filter?.Days" />
+        <select id="TeacherDescrip" name="TeacherDescrip">
+            <option value="">Select Teacher</option>
+            @if (ViewData["Teachers"] != null)
+            {
+                var teachers = ViewData["Teachers"] as List<string>;
+                if (teachers != null)
+                {
+                    @foreach (var teacher in teachers)
+                    {
+                        <option value="@teacher" selected="@((teacher == Model.Filter?.TeacherDescrip) ? "selected" : "")">@teacher</option>
+                    }
+                }
+            }
+        </select>
     </div>
 
     <!-- Start Time Filter -->
@@ -37,49 +57,7 @@
         <label for="EndTime">End Time</label>
         <input type="time" id="EndTime" name="EndTime" value="@Model.Filter?.EndTime?.ToString("HH:mm")" />
     </div>
-
-    <!-- Teacher Email Filter -->
-    <div>
-        <label for="Email">Teacher Email</label>
-        <input type="email" id="Email" name="Email" value="@Model.Filter?.Email" />
-    </div>
-
-    <!-- SchedID Filter -->
-    <div>
-        <label for="SchedID">Schedule ID</label>
-        <input type="text" id="SchedID" name="SchedID" value="@Model.Filter?.SchedID" />
-    </div>
-
-    <!-- Delivery Method Filter -->
-    <div>
-        <label for="DeliveryMethod">Delivery Method</label>
-        <input type="text" id="DeliveryMethod" name="DeliveryMethod" value="@Model.Filter?.DeliveryMethod" />
-    </div>
-
-    <!-- Secondary Teachers Filter -->
-    <div>
-        <label for="SecondaryTeachers">Secondary Teachers</label>
-        <input type="text" id="SecondaryTeachers" name="SecondaryTeachers" value="@Model.Filter?.SecondaryTeachers" />
-    </div>
-
-    <!-- Class Start Date Filter -->
-    <div>
-        <label for="ClassStart">Class Start Date</label>
-        <input type="date" id="ClassStart" name="ClassStart" value="@Model.Filter?.ClassStart?.ToString("yyyy-MM-dd")" />
-    </div>
-
-    <!-- Class End Date Filter -->
-    <div>
-        <label for="ClassEnd">Class End Date</label>
-        <input type="date" id="ClassEnd" name="ClassEnd" value="@Model.Filter?.ClassEnd?.ToString("yyyy-MM-dd")" />
-    </div>
-
-    <!-- Class Schedule Description Filter -->
-    <div>
-        <label for="ClassSchedDescrip">Class Schedule Description</label>
-        <input type="text" id="ClassSchedDescrip" name="ClassSchedDescrip" value="@Model.Filter?.ClassSchedDescrip" />
-    </div>
-
+    
     <div>
         <button type="submit">Filter</button>
     </div>
@@ -92,7 +70,8 @@
         @foreach (var item in Model.Classes)
         {
             <li>
-                @item.Course - @item.Section - @item.TeacherDescrip - @item.StartTime - @item.EndTime
+                @item.Course - @item.TeacherDescrip - @item.Days - @item.StartTime - @item.EndTime - @item.Email - @item.SchedID - @item.DeliveryMethod 
+                - @item.SecondaryTeachers - @item.ClassStart - @item.ClassEnd - @item.ClassSchedDescrip
             </li>
         }
     </ul>
