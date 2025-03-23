@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using demlandscheduling.Data;
 using demlandscheduling.DataModels;
 
-namespace demlandscheduling.Pages.Index
+namespace demlandscheduling.Pages.Index    
 {
     public class IndexModel(ApplicationDbContext context) : PageModel
     {
