@@ -6,13 +6,9 @@ using demlandscheduling.DataModels;
 // The above proivdes the necessary components for the Razor Pages, where Microsoft.EntityFrameworkCoore allows interactions within the database.
 // While demlandscheduling.Data and demlandscheduling.DataModels is declared to allow the specific database and model classes to be used for the following code.
 
-<<<<<<< HEAD
 // Below the PageModel is declared to be part of the Razor Pages Framework.
 // Meanwhile, the ApplicationDbContext is responsible for database interactions to be made. Lastly, the _Context stores the database context.
-namespace demlandscheduling.Pages.Index
-=======
-namespace demlandscheduling.Pages.Index    
->>>>>>> 7602bdb145776825718aaf3c4b824257c37c2a7f
+namespace demlandscheduling.Pages.Index  
 {
     public class IndexModel(ApplicationDbContext context) : PageModel
     {
