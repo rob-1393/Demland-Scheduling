@@ -47,34 +47,3 @@ button.accept-policy[b-k5hdlmudzx] {
   white-space: nowrap;
   line-height: 60px;
 }
-
-/* Table Styles */
-table.table[b-k5hdlmudzx] {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table.table th[b-k5hdlmudzx],
-table.table td[b-k5hdlmudzx] {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-table.table th[b-k5hdlmudzx] {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
-/* Alternating row colors */
-table.table tbody tr:nth-child(odd)[b-k5hdlmudzx] {
-    background-color: #f9f9f947;
-}
-
-table.table tbody tr:nth-child(even)[b-k5hdlmudzx] {
-    background-color: #ffffff;
-}
-
-table.table tbody tr[b-k5hdlmudzx] {
-  transition: background-color 0.3s;
-}
