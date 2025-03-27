@@ -1,7 +1,7 @@
 """
 Table Analytics Script
 
-Author: jackson sievers
+Author: Jackson Sievers, Robert Adams
 
 """
 
@@ -103,14 +103,40 @@ def analyze_history(excel_data):
     
     return excel_data
 
+def professorsAndClasses(excel_data):
+    # Extracts the professor names and the associated course.
+    profAndCourses = excel_data[['TeacherDescrip', 'Course']]
+    
+    # Replaces missing professors with filler names.
+    # Due to a skill issue with manipulating the spreadsheet directly, the column is made into an array.
+    i = 1
+    profArray = profAndCourses['TeacherDescrip'].to_numpy()
+    for index in range(len(profArray)):
+        if profArray[index] == '--':
+            # Function contains name of filler professors and an incremental number.
+            profArray[index] = f"Filler Professor {i}"
+            i += 1
+
+    # Places filler professors back into spreadsheet.
+    profAndCourses['TeacherDescrip'] = profArray
+    
+    # Contains courses by instructor and instructors by courses, respectively.
+    profByCourses = profAndCourses.groupby('Course')['TeacherDescrip'].apply(lambda x: ', '.join(x)).reset_index()
+    coursesByProf = profAndCourses.groupby('TeacherDescrip')['Course'].apply(lambda x: ', '.join(x)).reset_index()
+
+    return profByCourses, coursesByProf
+
 def main():
     excel_data = get_excel_sheet()
     
     if excel_data is not None:
         excel_data = reorder_excel(excel_data)
     
-    analyze_history(excel_data)
-    print(excel_data)
+    profByCourses, coursesByProf = professorsAndClasses(excel_data)
+    
+    #analyze_history(excel_data)
+    print(profByCourses)
+    #print(excel_data)
     #print(excel_data.to_xml())
 
 main()
