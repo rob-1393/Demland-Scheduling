@@ -202,11 +202,12 @@ def project_history(temp_excel_data, num_of_semesters) -> pd:
             if semester_start[1] == start_month:
                 # track the amount of classes that are being scheduled in a year (dictionary)
                     # max 500 classes per semester
-                    # potential
+                    # scan amount of time classes are scheduled in the past and prevent scheduling more than that
+                    # also create military time conversion
 
                 projected_data.loc[enumerator] = [
                     date_to_str(semester_start), date_to_str(semester_end), row.Course, row.Section, 
-                    row.ClassSchedDescrip, "--", row.Days, row.StartTime, row.EndTime, row.Cr, row.Max
+                    row.ClassSchedDescrip, f"John Professor #{enumerator}", row.Days, str(row.StartTime)[:5], str(row.EndTime)[:5], row.Cr, row.Max
                     ]
 
                 enumerator = enumerator + 1
@@ -256,7 +257,7 @@ def main():
         return
     
     # change how many semesters we want to project in advance
-    num_of_semesters = 3 
+    num_of_semesters = 3
 
     # create a copy of the original data to avoid accidental alteration
     temp_excel_data = excel_data.copy()
@@ -265,14 +266,16 @@ def main():
 
     print(projected_data)
     
+    #print(projected_data.to_xml())
+
+    
     #prof_by_courses, courses_by_prof = professors_and_classes(projected_data)
 
     
     #analyze_history(excel_data)
     #print(profByCourses)
     #print(excel_data)
-    #print(excel_data.to_xml())
-
+    
 main()
 
 """
