@@ -1,14 +1,18 @@
 """
 Table Analytics Script
 
-Author: Jackson Sievers, Robert Adams
+Authors: Jackson Sievers, Robert Adams
 
 """
 
 import os
 import pandas as pd
+import calendar
+from datetime import date
 
-def get_excel_sheet():
+#   function() -> [type] is called type hinting. It doesnt affect the code in any way, 
+#   its just a way for me to communicate what the function returns
+def get_excel_sheet() -> pd:
     """
     Retrieves the test data Excel sheet from the repository.
     Returns a pandas DataFrame.
@@ -17,10 +21,10 @@ def get_excel_sheet():
     try: 
         # Determine base GIT directory (OS agnostic)
         git_directory = os.path.abspath(os.path.join(os.getcwd()))
-        
+
         # Create file path (OS agnostic)
         table_path = os.path.join(git_directory, "Tables", "on-ground+online_tables_[TestTable].xlsx")
-        
+
         # Sheet name (currently default) [either will be "on-ground" or "online"].
         sheet_name = 'on-ground'
 
@@ -30,16 +34,15 @@ def get_excel_sheet():
         return excel_data
     
     except FileNotFoundError:
-        print(f"Error: File not found at {table_path}")
+        print(f"error: File not found at {table_path}")
         return None
     
     except ValueError as e:
         # print any errors that may occur
-        print(f"Error: {e}")
+        print(f"error: {e}")
         return None
 
-
-def reorder_excel(excel_data):
+def reorder_excel(excel_data) -> pd:
     """
     Cleans and reorders the columns of the Excel data.
     Returns a sorted pandas DataFrame.
@@ -61,81 +64,212 @@ def reorder_excel(excel_data):
     
     return excel_data
 
-def analyze_history(excel_data):
+def get_semester_start(year, month) -> list:
+    """
+    Based on provided year and month, return the start date of that semester
+
+    returns a list for ease of manipulation
+
+    Currently only supports spring and fall semester
+    """
+
+    # first day of the spring and falls semesters is the 1st monday of that month
+    first_day_of_month = date(year, month, 1)
+
+    # you can try to decipher this.... but just trust me that it returns the first monday of the given month..    
+    monday = str(((7 - first_day_of_month.weekday()) % 7) + 1)
+    
+    return [year, month, monday]
+
+def get_semester_end(year, month) -> list:
+    """
+    Based on provided start date, return the end date of that semester
+
+    returns a list for ease of manipulation
+
+    Currently only supports spring and fall semester
+    """
+
+    # spring semester is january (1), so final month is april (4)
+    if month == 1:
+        month = 4
+    # fall semester is september (9), so final month is december (12)
+    elif month == 9:
+        month = 12
+    else:
+        print("error: invalid semester")
+        return
+
+    sundays = []
+    # monthrange() returns 2 values, so [1] gets just that last day of month
+    last_day = calendar.monthrange(year, month)[1]
+
+    # iterate through the whole month, if day is sunday then add it to the list
+    for day in range(1, last_day + 1):
+        if date(year, month, day).weekday() == 6: # sunday = 6
+            sundays.append(str(day))
+
+    if month == 4:
+        # last day of spring semester is 4th sunday of april
+        return [year, month, sundays[3]]
+    elif month == 12:
+        # last day of fall semester is 2nd sunday of december
+        return [year, month, sundays[1]]
+    else:
+        print("error: something bad happened")
+        return
+
+def get_next_semester() -> list:
+    """
+    Returns the date of the incoming semester based on when this program is run
+    """
+
+    # gets the current date from your system
+    current_semester = str(date.today())
+
+    # can uncomment and set this date to anything for demonstration purposes
+    #current_semester = "2026-09-04"
+
+    # sets the start month of the spring and fall semesters, this can 
+    # be added onto later, but the logic below will have to change
+    spring_semester = 1
+    fall_semester = 9
+
+    # extracts the current month and year from the 
+    current_month = int(current_semester.split('-')[1])
+    current_year = int(current_semester.split('-')[0])
+
+    # if the current month is before FALL semester starts
+    if current_month >= spring_semester and current_month < fall_semester:
+        # returns first day of that FALL semester
+        return get_semester_start(current_year, fall_semester)
+
+    # if current month is before SPRING semester starts
+    elif current_month >= fall_semester and current_month < 13:
+        # iterate the year
+        current_year = current_year + 1
+        # returns first day of that SPRING semester
+        return get_semester_start(current_year, spring_semester)
+
+    # if something goes awry throw an error
+    else:
+        print("error: current month not in range")
+        return
+
+def date_to_str(date_list) -> str:
+    """
+    Takes a list of 3 objects and converts it into a datetime format like so: yyyy-mm-dd
+    """
+
+    year = date_list[0]
+
+    # insert a 0 to the beginning if number is single digits 
+    if int(date_list[1]) <= 9:
+        month = f"0{date_list[1]}"
+    else:
+        month = date_list[1]
+
+    # ditto with above comment
+    if int(date_list[2]) <= 9:
+        day = f"0{date_list[2]}"
+    else:
+        day = date_list[2]
+
+    return f"{year}-{month}-{day}"
+
+def project_history(temp_excel_data, num_of_semesters) -> pd:
     """
     History analytics
     """
 
-    # This currently projects dates based on all prior classes.
-    # Puts the year of the start date into their own column for manipulation and calculation.
-    excel_data['StartYear'] = excel_data['ClassStart'].dt.year
-    excel_data['StartMonth'] = excel_data['ClassStart'].dt.month
-    excel_data['EndYear'] = excel_data['ClassEnd'].dt.year
-    excel_data['EndMonth'] = excel_data['ClassEnd'].dt.month
+    projected_data = pd.DataFrame(columns=[
+    "ClassStart", "ClassEnd", "Course", "Section", "ClassSchedDescrip", 
+    "TeacherDescrip", "Days", "StartTime", "EndTime", "Cr", "Max"
+    ])
 
-    # Iterates through rows and creates 3 new columns with future dates.
-    for i, row in excel_data.iterrows():
-        startYear = row['StartYear']
-        startMonth = row['StartMonth']
-        endYear = row['EndYear']
-        endMonth = row['EndYear']
+    semester_start = get_next_semester()
 
-        # Loops through a set number of times.
-        # The range of (1, 3) equals two. This can be set set higher, but any more columns and the visual output gets messy.
-        for numOfSemesters in range(1, 3):
-            if startMonth == 9:
-                startFutureDate = f"{startYear + 1}-01"
-                startYear += 1
-                startMonth = 1
-                # End dates.
-                endFutureDate = f"{endYear + 1}-04"
-                endYear += 1
-
-            elif startMonth == 1:
-                startFutureDate = f"{startYear}-09"
-                startMonth = 9
-                # End dates.
-                endFutureDate = f"{endYear}-12"
-        
-            # Store the future dates in new columns (one for each semester).
-            excel_data.at[i, f'{numOfSemesters}SemesterAhead_Start'] = startFutureDate
-            excel_data.at[i, f'{numOfSemesters}SemesterAhead_End'] = endFutureDate        
+    enumerator = 0
     
-    return excel_data
+    for semester in range(0, num_of_semesters):
+        
+        semester_end = get_semester_end(semester_start[0], semester_start[1])
 
-def professorsAndClasses(excel_data):
+        for row in temp_excel_data.itertuples(index=False):
+            start_month = int(str(row.ClassStart)[5:7])
+            start_year = int(str(row.ClassStart)[:4])
+
+            if semester_start[1] == start_month:
+                # track the amount of classes that are being scheduled in a year (dictionary)
+                    # max 500 classes per semester
+                    # potential
+
+                projected_data.loc[enumerator] = [
+                    date_to_str(semester_start), date_to_str(semester_end), row.Course, row.Section, 
+                    row.ClassSchedDescrip, "--", row.Days, row.StartTime, row.EndTime, row.Cr, row.Max
+                    ]
+
+                enumerator = enumerator + 1
+
+        if semester_start[1] == 1:
+            semester_start = get_semester_start(semester_start[0], 9)
+        elif semester_start[1] == 9:
+            semester_start = get_semester_start(semester_start[0] + 1, 1)
+        else:
+            print("error: something bad happened")
+    
+    return projected_data
+
+
+# might do my dumbass big table idea just to get something rolling since the database isnt setup
+
+def professors_and_classes(excel_data) -> pd:
     # Extracts the professor names and the associated course.
-    profAndCourses = excel_data[['TeacherDescrip', 'Course']]
+    prof_and_courses = excel_data[['TeacherDescrip', 'Course']]
     
     # Replaces missing professors with filler names.
     # Due to a skill issue with manipulating the spreadsheet directly, the column is made into an array.
     i = 1
-    profArray = profAndCourses['TeacherDescrip'].to_numpy()
-    for index in range(len(profArray)):
-        if profArray[index] == '--':
+    prof_array = prof_and_courses['TeacherDescrip'].to_numpy()
+    for index in range(len(prof_array)):
+        if prof_array[index] == '--':
             # Function contains name of filler professors and an incremental number.
-            profArray[index] = f"Filler Professor {i}"
+            prof_array[index] = f"Filler Professor {i}"
             i += 1
 
     # Places filler professors back into spreadsheet.
-    profAndCourses['TeacherDescrip'] = profArray
+    prof_and_courses['TeacherDescrip'] = prof_array
     
     # Contains courses by instructor and instructors by courses, respectively.
-    profByCourses = profAndCourses.groupby('Course')['TeacherDescrip'].apply(lambda x: ', '.join(x)).reset_index()
-    coursesByProf = profAndCourses.groupby('TeacherDescrip')['Course'].apply(lambda x: ', '.join(x)).reset_index()
+    prof_by_courses = prof_and_courses.groupby('Course')['TeacherDescrip'].apply(lambda x: ', '.join(x)).reset_index()
+    courses_by_prof = prof_and_courses.groupby('TeacherDescrip')['Course'].apply(lambda x: ', '.join(x)).reset_index()
 
-    return profByCourses, coursesByProf
+    return prof_by_courses, courses_by_prof
 
 def main():
     excel_data = get_excel_sheet()
     
     if excel_data is not None:
         excel_data = reorder_excel(excel_data)
+    else:
+        print("error: No excel data found")
+        return
     
-    profByCourses, coursesByProf = professorsAndClasses(excel_data)
+    # change how many semesters we want to project in advance
+    num_of_semesters = 3 
+
+    # create a copy of the original data to avoid accidental alteration
+    temp_excel_data = excel_data.copy()
+
+    projected_data = project_history(temp_excel_data, num_of_semesters)
+
+    print(projected_data)
+    
+    #prof_by_courses, courses_by_prof = professors_and_classes(projected_data)
+
     
     #analyze_history(excel_data)
-    print(profByCourses)
+    #print(profByCourses)
     #print(excel_data)
     #print(excel_data.to_xml())
 
@@ -148,6 +282,7 @@ Orange = done/to that step
 #
 # Read the data
 # Look at previous dates
+# find 
 # Project dates forward >
 #   Decide timeframe for data (3 semesters) """
 #   Decide what classes should be scheduled
@@ -164,9 +299,3 @@ Orange = done/to that step
 
 # | ClassStart | ClassEnd  | Course  | Section | ClassSchedDescription     | Professor    | Days | StartTime   | EndTime     | Cr | Max |
 # | 5/6/2024   | 6/23/2024 | ITT-307 | TR1100A | Cybersecurity Foundations | Albert Kelly | W F  | 11:00:00 AM | 12:45:00 PM | 4  | 32  |
-
-
-# NOTES:
-# unsure if i want to modify the data given directly from the excel sheet, or insert each class into another "database"
-# may conduct analysis in python and export to other database for storage
-# when displaying time, may chop off the extra :00 and convert back from military time 
