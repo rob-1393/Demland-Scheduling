@@ -20,7 +20,7 @@ def get_excel_sheet() -> pd:
     
     try: 
         # Determine base GIT directory (OS agnostic)
-        git_directory = os.path.abspath(os.path.join(os.getcwd()))
+        git_directory = os.getcwd()
 
         # Create file path (OS agnostic)
         table_path = os.path.join(git_directory, "Tables", "on-ground+online_tables_[TestTable].xlsx")
@@ -177,6 +177,27 @@ def date_to_str(date_list) -> str:
 
     return f"{year}-{month}-{day}"
 
+def convert_std_time(military_time) -> str:
+    """
+    Converts a string that is military time to be standard time
+
+    Conversion: hh:mm:ss -> hh:mm am/pm
+    """
+
+    standard_time = str(military_time)[:5]
+
+    hour = int(standard_time[:2])
+
+    if hour <= 12:
+        return f"{standard_time} AM"
+    elif hour > 12 and hour <= 24:
+        hour = hour - 12
+        standard_time = f"{hour:02}{standard_time[2:]}"
+        return f"{standard_time} PM"
+    else:
+        print("error: time conversion failed")
+        return
+
 def project_history(temp_excel_data, num_of_semesters) -> pd:
     """
     History analytics
@@ -207,7 +228,7 @@ def project_history(temp_excel_data, num_of_semesters) -> pd:
 
                 projected_data.loc[enumerator] = [
                     date_to_str(semester_start), date_to_str(semester_end), row.Course, row.Section, 
-                    row.ClassSchedDescrip, f"John Professor #{enumerator}", row.Days, str(row.StartTime)[:5], str(row.EndTime)[:5], row.Cr, row.Max
+                    row.ClassSchedDescrip, f"John Professor #{enumerator}", row.Days, convert_std_time(row.StartTime), convert_std_time(row.EndTime), row.Cr, row.Max
                     ]
 
                 enumerator = enumerator + 1
@@ -247,6 +268,19 @@ def professors_and_classes(excel_data) -> pd:
 
     return prof_by_courses, courses_by_prof
 
+def export_xml(projected_data):
+    # Get the directory where the script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))  
+
+    # Define the XML file path in the same directory
+    xml_file_path = os.path.join(script_dir, "exports", "sample_schedule.xml")
+
+    os.makedirs(os.path.dirname(xml_file_path), exist_ok=True)
+
+    projected_data.to_xml(xml_file_path, index=False)
+
+    return
+
 def main():
     excel_data = get_excel_sheet()
     
@@ -264,17 +298,9 @@ def main():
 
     projected_data = project_history(temp_excel_data, num_of_semesters)
 
-    print(projected_data)
-    
-    #print(projected_data.to_xml())
+    #print(projected_data)
 
-    
-    #prof_by_courses, courses_by_prof = professors_and_classes(projected_data)
-
-    
-    #analyze_history(excel_data)
-    #print(profByCourses)
-    #print(excel_data)
+    export_xml(projected_data)
     
 main()
 
