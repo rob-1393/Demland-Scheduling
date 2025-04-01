@@ -12,7 +12,7 @@ from datetime import date
 
 #   function() -> [type] is called type hinting. It doesnt affect the code in any way, 
 #   its just a way for me to communicate what the function returns
-def get_excel_sheet() -> pd:
+def get_excel_sheet(sheet_name) -> pd:
     """
     Retrieves the test data Excel sheet from the repository.
     Returns a pandas DataFrame.
@@ -23,7 +23,7 @@ def get_excel_sheet() -> pd:
         git_directory = os.getcwd()
 
         # Create file path (OS agnostic)
-        table_path = os.path.join(git_directory, "Tables", "on-ground+online_tables_[TestTable].xlsx")
+        table_path = os.path.join(git_directory, "Tables", f"{sheet_name}.xlsx")
 
         # Sheet name (currently default) [either will be "on-ground" or "online"].
         sheet_name = 'on-ground'
@@ -211,6 +211,8 @@ def project_history(temp_excel_data, num_of_semesters) -> pd:
     semester_start = get_next_semester()
 
     enumerator = 0
+
+    max_class_per_semes = 500
     
     for semester in range(0, num_of_semesters):
         
@@ -232,6 +234,8 @@ def project_history(temp_excel_data, num_of_semesters) -> pd:
                     ]
 
                 enumerator = enumerator + 1
+                if enumerator % max_class_per_semes == 0:
+                    break
 
         if semester_start[1] == 1:
             semester_start = get_semester_start(semester_start[0], 9)
@@ -268,12 +272,12 @@ def professors_and_classes(excel_data) -> pd:
 
     return prof_by_courses, courses_by_prof
 
-def export_xml(projected_data):
+def export_xml(projected_data, xml_name):
     # Get the directory where the script is located
     script_dir = os.path.dirname(os.path.abspath(__file__))  
 
     # Define the XML file path in the same directory
-    xml_file_path = os.path.join(script_dir, "exports", "sample_schedule.xml")
+    xml_file_path = os.path.join(script_dir, "exports", f"{xml_name}.xml")
 
     os.makedirs(os.path.dirname(xml_file_path), exist_ok=True)
 
@@ -282,7 +286,10 @@ def export_xml(projected_data):
     return
 
 def main():
-    excel_data = get_excel_sheet()
+
+    excel_sheet = "on-ground+online_tables_[Fall+SpringOnly]"
+
+    excel_data = get_excel_sheet(excel_sheet)
     
     if excel_data is not None:
         excel_data = reorder_excel(excel_data)
@@ -300,14 +307,18 @@ def main():
 
     #print(projected_data)
 
-    export_xml(projected_data)
+    xml_name = "schedule"
+
+    export_xml(projected_data, xml_name)
+
+    print("Done.")
     
 main()
 
 """
-Orange = done/to that step
+""" """ = done/to that step
 
-# PROCESSES NEEDED:
+# PROCESSES PLANNED:
 #
 # Read the data
 # Look at previous dates
@@ -316,7 +327,6 @@ Orange = done/to that step
 #   Decide timeframe for data (3 semesters) """
 #   Decide what classes should be scheduled
 #   Select only most recent classes to project dates forward
-#   Fix entries where single classes are listed twice under the 2 diff days
 # Decide Professor > 
 #   More times taught = priority
 #   No Professor?  Pull from other database of professors (not created) [optional]
@@ -325,6 +335,3 @@ Orange = done/to that step
 """
 # Convert to XML
 #   Reformat data to format below (what i view to be the most important data)"""
-
-# | ClassStart | ClassEnd  | Course  | Section | ClassSchedDescription     | Professor    | Days | StartTime   | EndTime     | Cr | Max |
-# | 5/6/2024   | 6/23/2024 | ITT-307 | TR1100A | Cybersecurity Foundations | Albert Kelly | W F  | 11:00:00 AM | 12:45:00 PM | 4  | 32  |
