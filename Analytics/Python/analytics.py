@@ -227,19 +227,22 @@ def project_history(temp_excel_data, num_of_semesters) -> pd:
 
             # if class has been taught this semester previously, then schedule it
             if semester_start[1] == start_month:
-                # TODO
-                # track the amount of classes that are being scheduled in a year (dictionary)
-                    # max 500 classes per semester
-                    # scan amount of time classes are scheduled in the past and prevent scheduling more than that
+                """
+                TODO
+                track the amount of classes that are being scheduled in a year (dictionary)
+                    max 500 classes per semester
+                    scan amount of time classes are scheduled in the past and prevent scheduling more than that
+                
+                """
 
                 # store data at position enumerator in the dataframe
                 projected_data.loc[enumerator] = [
-
+                    
                     # set the start and end date to be of a new semester
                     # clear the professor's name for later step
                     # convert the StartTime and EndTime to standard time
                     # leave everything else as is 
-                    
+
                     date_to_str(semester_start), date_to_str(semester_end), row.Course, row.Section, 
                     row.ClassSchedDescrip, "", row.Days, convert_std_time(row.StartTime), 
                     convert_std_time(row.EndTime), row.Cr, row.Max
@@ -330,8 +333,10 @@ def main():
 
     print(projected_data)
 
+    """ NOT YET IMPLEMENTED
     # selects professors for the projected classes
     #final_schedule = select_professors(projected_data)
+    """
 
     # define a name for XML file
     xml_name = "schedule"
