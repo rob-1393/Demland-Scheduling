@@ -57,6 +57,7 @@ def reorder_excel(excel_data) -> pd:
     "TeacherDescrip", "Days", "StartTime", "EndTime", "Cr", "Max"
     ]
     
+    # Change the order of the data
     excel_data = excel_data[new_order]
     
     # sort the values by classStart
@@ -160,22 +161,13 @@ def date_to_str(date_list) -> str:
     """
     Takes a list of 3 objects and converts it into a datetime format like so: yyyy-mm-dd
     """
-
+    # set each variable to be the respective slot in the list
     year = date_list[0]
-
-    # insert a 0 to the beginning if number is single digits 
-    if int(date_list[1]) <= 9:
-        month = f"0{date_list[1]}"
-    else:
-        month = date_list[1]
-
-    # ditto with above comment
-    if int(date_list[2]) <= 9:
-        day = f"0{date_list[2]}"
-    else:
-        day = date_list[2]
-
-    return f"{year}-{month}-{day}"
+    month = int(date_list[1])
+    day = int(date_list[2])
+    
+    # variable:02 ensures that single numbers like 6 are displayed as "06"
+    return f"{year}-{month:02}-{day:02}"
 
 def convert_std_time(military_time) -> str:
     """
@@ -184,10 +176,13 @@ def convert_std_time(military_time) -> str:
     Conversion: hh:mm:ss -> hh:mm am/pm
     """
 
+    # takes first 5 spots from the time, its now hh:mm
     standard_time = str(military_time)[:5]
 
+    # extracting the hour (first 2 digits) and converting to int
     hour = int(standard_time[:2])
 
+    # logic to determine whether the hour is in the AM or PM
     if hour <= 12:
         return f"{standard_time} AM"
     elif hour > 12 and hour <= 24:
@@ -208,46 +203,68 @@ def project_history(temp_excel_data, num_of_semesters) -> pd:
     "TeacherDescrip", "Days", "StartTime", "EndTime", "Cr", "Max"
     ])
 
+    # retrieve the current semester based on when this script is run
     semester_start = get_next_semester()
 
+    # set an enumerator that will be used later
     enumerator = 0
 
+    # set maximum classes that can be scheduled in each semester
     max_class_per_semes = 500
     
+    # loops through the table an amount equal to num_of_semesters
     for semester in range(0, num_of_semesters):
         
+        # retrieves semester end date based semester_start
         semester_end = get_semester_end(semester_start[0], semester_start[1])
 
+        # iterate through each row in the table
         for row in temp_excel_data.itertuples(index=False):
+
+            # gets class start month and year from row of table
             start_month = int(str(row.ClassStart)[5:7])
             start_year = int(str(row.ClassStart)[:4])
 
+            # if class has been taught this semester previously, then schedule it
             if semester_start[1] == start_month:
+                # TODO
                 # track the amount of classes that are being scheduled in a year (dictionary)
                     # max 500 classes per semester
                     # scan amount of time classes are scheduled in the past and prevent scheduling more than that
-                    # also create military time conversion
 
+                # store data at position enumerator in the dataframe
                 projected_data.loc[enumerator] = [
+
+                    # set the start and end date to be of a new semester
+                    # clear the professor's name for later step
+                    # convert the StartTime and EndTime to standard time
+                    # leave everything else as is 
+                    
                     date_to_str(semester_start), date_to_str(semester_end), row.Course, row.Section, 
-                    row.ClassSchedDescrip, f"John Professor #{enumerator}", row.Days, convert_std_time(row.StartTime), convert_std_time(row.EndTime), row.Cr, row.Max
+                    row.ClassSchedDescrip, "", row.Days, convert_std_time(row.StartTime), 
+                    convert_std_time(row.EndTime), row.Cr, row.Max
                     ]
 
+                # increment the enumerator after class is added
                 enumerator = enumerator + 1
+
+                # if we reach the max number of classes per semester, then break the loop
                 if enumerator % max_class_per_semes == 0:
                     break
 
+        # if the semester is SPRING then change it to be next FALL
         if semester_start[1] == 1:
             semester_start = get_semester_start(semester_start[0], 9)
+
+        # if the semester is FALL then change it to be next SPRING
         elif semester_start[1] == 9:
             semester_start = get_semester_start(semester_start[0] + 1, 1)
         else:
-            print("error: something bad happened")
+            print("error in project_history(): semester conversion failed")
     
     return projected_data
 
-
-# might do my dumbass big table idea just to get something rolling since the database isnt setup
+# might do my dumbass big table idea to select professors just to get something rolling since the database isnt setup
 
 def professors_and_classes(excel_data) -> pd:
     # Extracts the professor names and the associated course.
@@ -273,24 +290,29 @@ def professors_and_classes(excel_data) -> pd:
     return prof_by_courses, courses_by_prof
 
 def export_xml(projected_data, xml_name):
-    # Get the directory where the script is located
+    # get the directory where the script is located
     script_dir = os.path.dirname(os.path.abspath(__file__))  
 
-    # Define the XML file path in the same directory
+    # define XML file path to be stored
     xml_file_path = os.path.join(script_dir, "exports", f"{xml_name}.xml")
 
+    # create directory if it doesnt exist already
     os.makedirs(os.path.dirname(xml_file_path), exist_ok=True)
 
+    # convert the projected data to XML at that file path
     projected_data.to_xml(xml_file_path, index=False)
 
     return
 
 def main():
 
-    excel_sheet = "on-ground+online_tables_[Fall+SpringOnly]"
+    # Get name of the excel sheet : Fall+SpringOnly | TestTable
+    excel_sheet = "on-ground+online_tables_[TestTable]"
 
+    # Retrieve excel data and import it to a pandas dataframe
     excel_data = get_excel_sheet(excel_sheet)
     
+    # Check if data exists, then reorders the data if there is
     if excel_data is not None:
         excel_data = reorder_excel(excel_data)
     else:
@@ -303,13 +325,19 @@ def main():
     # create a copy of the original data to avoid accidental alteration
     temp_excel_data = excel_data.copy()
 
+    # projects the excel data forward and returns a pandas dataframe
     projected_data = project_history(temp_excel_data, num_of_semesters)
 
-    #print(projected_data)
+    print(projected_data)
 
+    # selects professors for the projected classes
+    #final_schedule = select_professors(projected_data)
+
+    # define a name for XML file
     xml_name = "schedule"
 
-    export_xml(projected_data, xml_name)
+    # export the protected_data dataframe to a file located under /exports
+    #export_xml(projected_data, xml_name)
 
     print("Done.")
     
