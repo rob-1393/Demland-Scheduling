@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\demlandscheduling.egnucrccwx.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wpXDj4Uhi0qUrAneJskQeuS7lg9Z\u002BoanSUifFuHBdjQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1759"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wpXDj4Uhi0qUrAneJskQeuS7lg9Z\u002BoanSUifFuHBdjQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Mar 2025 23:00:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1759"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wpXDj4Uhi0qUrAneJskQeuS7lg9Z\u002BoanSUifFuHBdjQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 03:07:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/demlandscheduling/demlandscheduling.egnucrccwx.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\demlandscheduling.egnucrccwx.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"egnucrccwx"},{"Name":"integrity","Value":"sha256-wpXDj4Uhi0qUrAneJskQeuS7lg9Z\u002BoanSUifFuHBdjQ="},{"Name":"label","Value":"_content/demlandscheduling/demlandscheduling.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1759"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wpXDj4Uhi0qUrAneJskQeuS7lg9Z\u002BoanSUifFuHBdjQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Mar 2025 23:00:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1759"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wpXDj4Uhi0qUrAneJskQeuS7lg9Z\u002BoanSUifFuHBdjQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 03:07:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/demlandscheduling/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
