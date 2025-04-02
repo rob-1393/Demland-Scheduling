@@ -80,6 +80,8 @@ C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\De
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\r0ed7z2hvf-muycvpuwrr.gz
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\a644lv6lx7-87fc7y1x7t.gz
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\zq9p3o58tl-mlv21k5csn.gz
+C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-svgnti2ui0.gz
+C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\2h0w4dchia-svgnti2ui0.gz
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -226,5 +228,3 @@ C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\bin\De
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\bin\Debug\net9.0\Serilog.Sinks.Console.dll
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\bin\Debug\net9.0\Serilog.Sinks.File.dll
-C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\80om1cz1x7-egnucrccwx.gz
-C:\Users\Mbarn\OneDrive\Desktop\ITT-490_Capstone\WebDev\demlandscheduling\obj\Debug\net9.0\compressed\2h0w4dchia-egnucrccwx.gz
