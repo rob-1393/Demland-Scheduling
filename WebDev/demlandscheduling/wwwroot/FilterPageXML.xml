@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>CST-321</Course>
+    <Section>WF300A</Section>
+    <ClassSchedDescrip>Operating Systems Fundamentals</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #0</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>03:00 PM</StartTime>
+    <EndTime>04:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>CST-215</Course>
+    <Section>WF300A</Section>
+    <ClassSchedDescrip>Digital Logic and Design Lecture &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #1</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>03:00 PM</StartTime>
+    <EndTime>04:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>ETG-222</Course>
+    <Section>TR700A</Section>
+    <ClassSchedDescrip>Experimental Methods</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #2</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>07:00 AM</StartTime>
+    <EndTime>08:45 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>ETG-333</Course>
+    <Section>TR1100A</Section>
+    <ClassSchedDescrip>Applications of Instrumentation &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #3</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>11:00 AM</StartTime>
+    <EndTime>12:45 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>ITT-310</Course>
+    <Section>TR500A</Section>
+    <ClassSchedDescrip>Programming for Security Professionals</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #4</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>05:00 PM</StartTime>
+    <EndTime>06:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>44</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>CST-315</Course>
+    <Section>WF100A</Section>
+    <ClassSchedDescrip>Operating Systems Lecture &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #5</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>01:00 PM</StartTime>
+    <EndTime>02:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>46</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>ESG-162</Course>
+    <Section>WF900A</Section>
+    <ClassSchedDescrip>Engineering Math</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #6</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>09:00 AM</StartTime>
+    <EndTime>10:20 AM</EndTime>
+    <Cr>3</Cr>
+    <Max>63</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>ESG-220</Course>
+    <Section>M315A</Section>
+    <ClassSchedDescrip>Introduction to Engineering Design and Prototyping &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #7</TeacherDescrip>
+    <Days>M</Days>
+    <StartTime>03:15 PM</StartTime>
+    <EndTime>05:45 PM</EndTime>
+    <Cr>2</Cr>
+    <Max>48</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>STG-242L</Course>
+    <Section>F1130A</Section>
+    <ClassSchedDescrip>Science of Solid Materials Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #8</TeacherDescrip>
+    <Days>F</Days>
+    <StartTime>11:30 AM</StartTime>
+    <EndTime>02:00 PM</EndTime>
+    <Cr>1</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>ESG-251</Course>
+    <Section>F1230A</Section>
+    <ClassSchedDescrip>Computer Aided Design &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #9</TeacherDescrip>
+    <Days>F</Days>
+    <StartTime>12:30 AM</StartTime>
+    <EndTime>03:00 PM</EndTime>
+    <Cr>2</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>MET-275</Course>
+    <Section>WF700A</Section>
+    <ClassSchedDescrip>Computerized Design and Manufacturing Tools in MET &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #10</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>07:00 AM</StartTime>
+    <EndTime>09:30 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>CST-215</Course>
+    <Section>WF100A</Section>
+    <ClassSchedDescrip>Digital Logic and Design Lecture &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #11</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>01:00 PM</StartTime>
+    <EndTime>02:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>MEE-360L</Course>
+    <Section>M600A</Section>
+    <ClassSchedDescrip>Dynamics Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #12</TeacherDescrip>
+    <Days>M</Days>
+    <StartTime>06:00 PM</StartTime>
+    <EndTime>08:30 PM</EndTime>
+    <Cr>1</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2025-09-01</ClassStart>
+    <ClassEnd>2025-12-14</ClassEnd>
+    <Course>MEE-445</Course>
+    <Section>TR1230A</Section>
+    <ClassSchedDescrip>Heat Transfer &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #13</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>12:30 AM</StartTime>
+    <EndTime>03:00 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>CST-345</Course>
+    <Section>WF500A</Section>
+    <ClassSchedDescrip>Database Design &amp; Development</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #14</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>05:00 PM</StartTime>
+    <EndTime>06:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>CST-391</Course>
+    <Section>TR300A</Section>
+    <ClassSchedDescrip>JavaScript Web Application Development</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #15</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>03:00 PM</StartTime>
+    <EndTime>04:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>ESG-330</Course>
+    <Section>TR1230A</Section>
+    <ClassSchedDescrip>Introduction to Robotics &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #16</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>12:30 AM</StartTime>
+    <EndTime>03:00 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>SYM-408</Course>
+    <Section>TR900A</Section>
+    <ClassSchedDescrip>Relational Databases for Business Applications</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #17</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>09:00 AM</StartTime>
+    <EndTime>10:45 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>49</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>MET-302</Course>
+    <Section>TR700A</Section>
+    <ClassSchedDescrip>Principles of Design I &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #18</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>07:00 AM</StartTime>
+    <EndTime>09:30 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>MET-302</Course>
+    <Section>TR700A</Section>
+    <ClassSchedDescrip>Principles of Design I &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #19</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>07:00 AM</StartTime>
+    <EndTime>09:30 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>CST-217</Course>
+    <Section>WF100A</Section>
+    <ClassSchedDescrip>Principles of Database Design and Programming Lecture &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #20</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>01:00 PM</StartTime>
+    <EndTime>02:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>CST-416</Course>
+    <Section>TR300A</Section>
+    <ClassSchedDescrip>Mobile Game Development Lecture &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #21</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>03:00 PM</StartTime>
+    <EndTime>04:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>MEE-480</Course>
+    <Section>TR945A</Section>
+    <ClassSchedDescrip>Electro-Mechanical Systems and Controls &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #22</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>09:45 AM</StartTime>
+    <EndTime>12:15 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>MEE-460</Course>
+    <Section>WF315A</Section>
+    <ClassSchedDescrip>Mechanical Instrumentation and Devices &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #23</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>03:15 PM</StartTime>
+    <EndTime>05:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>ITT-111</Course>
+    <Section>WF100A</Section>
+    <ClassSchedDescrip>Introduction to Information Technology</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #24</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>01:00 PM</StartTime>
+    <EndTime>02:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>ESG-220</Course>
+    <Section>M700A</Section>
+    <ClassSchedDescrip>Introduction to Engineering Design and Prototyping &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #25</TeacherDescrip>
+    <Days>M</Days>
+    <StartTime>07:00 AM</StartTime>
+    <EndTime>09:30 AM</EndTime>
+    <Cr>2</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>MET-308</Course>
+    <Section>WF1230A</Section>
+    <ClassSchedDescrip>Fluid/Thermal Transport &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #26</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>12:30 AM</StartTime>
+    <EndTime>03:00 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>CYB-220</Course>
+    <Section>M100A</Section>
+    <ClassSchedDescrip>Cyberlaw and Privacy in a Digital Age</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #27</TeacherDescrip>
+    <Days>M</Days>
+    <StartTime>01:00 PM</StartTime>
+    <EndTime>02:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>46</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>STG-350</Course>
+    <Section>WF320A</Section>
+    <ClassSchedDescrip>Electromagnetic Fields &amp; Optics</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #28</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>03:20 PM</StartTime>
+    <EndTime>04:40 PM</EndTime>
+    <Cr>3</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>SYM-400</Course>
+    <Section>WF300A</Section>
+    <ClassSchedDescrip>Introduction to Database Structures</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #29</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>03:00 PM</StartTime>
+    <EndTime>04:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>46</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>ITT-310</Course>
+    <Section>TR1100A</Section>
+    <ClassSchedDescrip>Programming for Security Professionals</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #30</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>11:00 AM</StartTime>
+    <EndTime>12:45 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>49</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>ITT-415</Course>
+    <Section>M500A</Section>
+    <ClassSchedDescrip>IT Business Case Planning for Global Enterprise</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #31</TeacherDescrip>
+    <Days>M</Days>
+    <StartTime>05:00 PM</StartTime>
+    <EndTime>06:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>49</Max>
+  </row>
+  <row>
+    <ClassStart>2026-01-05</ClassStart>
+    <ClassEnd>2026-04-26</ClassEnd>
+    <Course>STG-350L</Course>
+    <Section>W1230A</Section>
+    <ClassSchedDescrip>Electromagnetic Fields &amp; Optics Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #32</TeacherDescrip>
+    <Days>W</Days>
+    <StartTime>12:30 AM</StartTime>
+    <EndTime>03:00 PM</EndTime>
+    <Cr>1</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>CST-321</Course>
+    <Section>WF300A</Section>
+    <ClassSchedDescrip>Operating Systems Fundamentals</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #33</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>03:00 PM</StartTime>
+    <EndTime>04:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>CST-215</Course>
+    <Section>WF300A</Section>
+    <ClassSchedDescrip>Digital Logic and Design Lecture &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #34</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>03:00 PM</StartTime>
+    <EndTime>04:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>ETG-222</Course>
+    <Section>TR700A</Section>
+    <ClassSchedDescrip>Experimental Methods</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #35</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>07:00 AM</StartTime>
+    <EndTime>08:45 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>ETG-333</Course>
+    <Section>TR1100A</Section>
+    <ClassSchedDescrip>Applications of Instrumentation &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #36</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>11:00 AM</StartTime>
+    <EndTime>12:45 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>ITT-310</Course>
+    <Section>TR500A</Section>
+    <ClassSchedDescrip>Programming for Security Professionals</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #37</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>05:00 PM</StartTime>
+    <EndTime>06:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>44</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>CST-315</Course>
+    <Section>WF100A</Section>
+    <ClassSchedDescrip>Operating Systems Lecture &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #38</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>01:00 PM</StartTime>
+    <EndTime>02:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>46</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>ESG-162</Course>
+    <Section>WF900A</Section>
+    <ClassSchedDescrip>Engineering Math</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #39</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>09:00 AM</StartTime>
+    <EndTime>10:20 AM</EndTime>
+    <Cr>3</Cr>
+    <Max>63</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>ESG-220</Course>
+    <Section>M315A</Section>
+    <ClassSchedDescrip>Introduction to Engineering Design and Prototyping &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #40</TeacherDescrip>
+    <Days>M</Days>
+    <StartTime>03:15 PM</StartTime>
+    <EndTime>05:45 PM</EndTime>
+    <Cr>2</Cr>
+    <Max>48</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>STG-242L</Course>
+    <Section>F1130A</Section>
+    <ClassSchedDescrip>Science of Solid Materials Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #41</TeacherDescrip>
+    <Days>F</Days>
+    <StartTime>11:30 AM</StartTime>
+    <EndTime>02:00 PM</EndTime>
+    <Cr>1</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>ESG-251</Course>
+    <Section>F1230A</Section>
+    <ClassSchedDescrip>Computer Aided Design &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #42</TeacherDescrip>
+    <Days>F</Days>
+    <StartTime>12:30 AM</StartTime>
+    <EndTime>03:00 PM</EndTime>
+    <Cr>2</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>MET-275</Course>
+    <Section>WF700A</Section>
+    <ClassSchedDescrip>Computerized Design and Manufacturing Tools in MET &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #43</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>07:00 AM</StartTime>
+    <EndTime>09:30 AM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>CST-215</Course>
+    <Section>WF100A</Section>
+    <ClassSchedDescrip>Digital Logic and Design Lecture &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #44</TeacherDescrip>
+    <Days>W F</Days>
+    <StartTime>01:00 PM</StartTime>
+    <EndTime>02:45 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>30</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>MEE-360L</Course>
+    <Section>M600A</Section>
+    <ClassSchedDescrip>Dynamics Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #45</TeacherDescrip>
+    <Days>M</Days>
+    <StartTime>06:00 PM</StartTime>
+    <EndTime>08:30 PM</EndTime>
+    <Cr>1</Cr>
+    <Max>24</Max>
+  </row>
+  <row>
+    <ClassStart>2026-09-07</ClassStart>
+    <ClassEnd>2026-12-13</ClassEnd>
+    <Course>MEE-445</Course>
+    <Section>TR1230A</Section>
+    <ClassSchedDescrip>Heat Transfer &amp; Lab</ClassSchedDescrip>
+    <TeacherDescrip>John Professor #46</TeacherDescrip>
+    <Days>T R</Days>
+    <StartTime>12:30 AM</StartTime>
+    <EndTime>03:00 PM</EndTime>
+    <Cr>4</Cr>
+    <Max>24</Max>
+  </row>
+</data>
