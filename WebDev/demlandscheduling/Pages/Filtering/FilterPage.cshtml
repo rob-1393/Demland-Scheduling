@@ -5,142 +5,108 @@
     ViewData["Title"] = "Filter Classes";
 }
 
-<h2>Filter Classes</h2>
+<div class="page-content">
+    <h2>Filter Classes</h2>
 
-<form method="get">
-    <!-- Course Filter -->
-    <div>
-        <label for="Course">Course</label>
-        <select id="Course" name="Course">
-            <option value="">Select Course</option>
-            @if (ViewData["Courses"] != null)
-            {
-                var courses = ViewData["Courses"] as List<string>;
-                if (courses != null)
+    <form method="get">
+        <!-- Course Filter -->
+        <div>
+            <label for="Course">Course</label>
+            <select id="Course" name="Course">
+                <option value="">Select Course</option>
+                @if (ViewData["Courses"] != null)
                 {
-                    @foreach (var course in courses)
+                    var courses = ViewData["Courses"] as List<string>;
+                    if (courses != null)
                     {
-                        <option value="@course" selected="@((course == Model.Filter?.Course) ? "selected" : "")">@course</option>
+                        @foreach (var course in courses)
+                        {
+                            <option value="@course" selected="@((course == Model.Filter?.Course) ? "selected" : "")">@course</option>
+                        }
                     }
                 }
-            }
-        </select>
-    </div>
+            </select>
+        </div>
 
-    <!-- Teacher Description Filter -->
-    <div>
-        <label for="TeacherDescrip">Teacher</label>
-        <select id="TeacherDescrip" name="TeacherDescrip">
-            <option value="">Select Teacher</option>
-            @if (ViewData["Teachers"] != null)
-            {
-                var teachers = ViewData["Teachers"] as List<string>;
-                if (teachers != null)
+        <!-- Teacher Description Filter -->
+        <div>
+            <label for="TeacherDescrip">Teacher</label>
+            <select id="TeacherDescrip" name="TeacherDescrip">
+                <option value="">Select Teacher</option>
+                @if (ViewData["Teachers"] != null)
                 {
-                    @foreach (var teacher in teachers)
+                    var teachers = ViewData["Teachers"] as List<string>;
+                    if (teachers != null)
                     {
-                        <option value="@teacher" selected="@((teacher == Model.Filter?.TeacherDescrip) ? "selected" : "")">@teacher</option>
+                        @foreach (var teacher in teachers)
+                        {
+                            <option value="@teacher" selected="@((teacher == Model.Filter?.TeacherDescrip) ? "selected" : "")">@teacher</option>
+                        }
                     }
                 }
-            }
-        </select>
-    </div>
+            </select>
+        </div>
 
-    <!-- Start Time Filter -->
-    <div>
-        <label for="StartTime">Start Time</label>
-        <input type="time" id="StartTime" name="StartTime" value="@Model.Filter?.StartTime?.ToString("HH:mm")" />
-    </div>
+        <!-- Start Time Filter -->
+        <div>
+            <label for="StartTime">Start Time</label>
+            <input type="time" id="StartTime" name="StartTime" value="@Model.Filter?.StartTime?.ToString("HH:mm")" />
+        </div>
 
-    <!-- End Time Filter -->
-    <div>
-        <label for="EndTime">End Time</label>
-        <input type="time" id="EndTime" name="EndTime" value="@Model.Filter?.EndTime?.ToString("HH:mm")" />
-    </div>
-    
-    <div>
-        <button type="submit">Filter</button>
-    </div>
-</form>
+        <!-- End Time Filter -->
+        <div>
+            <label for="EndTime">End Time</label>
+            <input type="time" id="EndTime" name="EndTime" value="@Model.Filter?.EndTime?.ToString("HH:mm")" />
+        </div>
+        
+        <div>
+            <button type="submit">Filter</button>
+        </div>
+    </form>
 
-@if (Model.Classes != null && Model.Classes.Any())
-{
-    <h3>Filtered Classes</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Course</th>
-                <th>Teacher</th>
-                <th>Days</th>
-                <th>Start Time</th>
-                <th>End Time</th>
-                <th>Email</th>
-                <th>Sched ID</th>
-                <th>Delivery Method</th>
-                <th>Secondary Teachers</th>
-                <th>Class Start</th>
-                <th>Class End</th>
-                <th>Class Schedule Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Classes.Select((value, index) => new { value, index }))
-            {
-                var rowClass = (item.index % 2 == 0) ? "even" : "odd";  <!-- Assigning the even/odd class -->
-                <tr class="@rowClass">
-                    <td>@item.value.Course</td>
-                    <td>@item.value.TeacherDescrip</td>
-                    <td>@item.value.Days</td>
-                    <td>@item.value.StartTime</td>
-                    <td>@item.value.EndTime</td>
-                    <td>@item.value.Email</td>
-                    <td>@item.value.SchedID</td>
-                    <td>@item.value.DeliveryMethod</td>
-                    <td>@item.value.SecondaryTeachers</td>
-                    <td>@item.value.ClassStart</td>
-                    <td>@item.value.ClassEnd</td>
-                    <td>@item.value.ClassSchedDescrip</td>
+    @if (Model.Classes != null && Model.Classes.Any())
+    {
+        <h3 class="mt-4">Filtered Classes</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                    <th>Days</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Email</th>
+                    <th>Sched ID</th>
+                    <th>Delivery Method</th>
+                    <th>Secondary Teachers</th>
+                    <th>Class Start</th>
+                    <th>Class End</th>
+                    <th>Class Schedule Description</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>No classes found with the specified filters.</p>
-}
-
-<style>
-    /* Table styles */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Classes.Select((value, index) => new { value, index }))
+                {
+                    <tr>
+                        <td>@item.value.Course</td>
+                        <td>@item.value.TeacherDescrip</td>
+                        <td>@item.value.Days</td>
+                        <td>@item.value.StartTime</td>
+                        <td>@item.value.EndTime</td>
+                        <td>@item.value.Email</td>
+                        <td>@item.value.SchedID</td>
+                        <td>@item.value.DeliveryMethod</td>
+                        <td>@item.value.SecondaryTeachers</td>
+                        <td>@item.value.ClassStart</td>
+                        <td>@item.value.ClassEnd</td>
+                        <td>@item.value.ClassSchedDescrip</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     }
-
-    table th,
-    table td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
+    else
+    {
+        <p>No classes found with the specified filters.</p>
     }
-
-    table th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
-
-    /* Specific table row alternating styles */
-    .even {
-        background-color: #f9f9f9;  /* Light gray for even rows */
-    }
-
-    .odd {
-        background-color: #ffffff;  /* White for odd rows */
-    }
-
-    /* Extra style to help with row hover for clarity */
-    tr:hover {
-        background-color: #f1f1f1;
-    }
-</style>
+</div>

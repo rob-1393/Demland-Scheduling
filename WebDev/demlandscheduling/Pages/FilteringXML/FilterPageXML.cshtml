@@ -5,127 +5,96 @@
     ViewData["Title"] = "Filter Classes";
 }
 
-<h2>Filter Classes</h2>
+<div class="page-content">
+    <h2>Filter Classes</h2>
 
-<form method="get">
-    <!-- Course Filter -->
-    <div>
-        <label for="Course">Course</label>
-        <select id="Course" name="Course">
-            <option value="">Select Course</option>
-            @if (ViewData["Courses"] is List<string> courses)
-            {
-                @foreach (var course in courses)
+    <form method="get">
+        <!-- Course Filter -->
+        <div>
+            <label for="Course">Course</label>
+            <select id="Course" name="Course">
+                <option value="">Select Course</option>
+                @if (ViewData["Courses"] is List<string> courses)
                 {
-                    <option value="@course" selected="@(course == Model.Filter?.Course ? "selected" : null)">@course</option>
+                    @foreach (var course in courses)
+                    {
+                        <option value="@course" selected="@(course == Model.Filter?.Course ? "selected" : null)">@course</option>
+                    }
                 }
-            }
-        </select>
-    </div>
+            </select>
+        </div>
 
-    <!-- Instructor Filter -->
-    <div>
-        <label for="Instructor">Instructor</label>
-        <select id="Instructor" name="Instructor">
-            <option value="">Select Instructor</option>
-            @if (ViewData["Instructors"] is List<string> instructors)
-            {
-                @foreach (var instructor in instructors)
+        <!-- Instructor Filter -->
+        <div>
+            <label for="Instructor">Instructor</label>
+            <select id="Instructor" name="Instructor">
+                <option value="">Select Instructor</option>
+                @if (ViewData["Instructors"] is List<string> instructors)
                 {
-                    <option value="@instructor" selected="@(instructor == Model.Filter?.Instructor ? "selected" : null)">@instructor</option>
+                    @foreach (var instructor in instructors)
+                    {
+                        <option value="@instructor" selected="@(instructor == Model.Filter?.Instructor ? "selected" : null)">@instructor</option>
+                    }
                 }
-            }
-        </select>
-    </div>
+            </select>
+        </div>
 
-    <!-- Start Time Filter -->
-    <div>
-        <label for="StartTime">Start Time</label>
-        <input type="time" id="StartTime" name="StartTime" 
-               value="@(DateTime.TryParse(Model.Filter?.StartTime, out var startTime) ? startTime.ToString("HH:mm") : "")" />
-    </div>
+        <!-- Start Time Filter -->
+        <div>
+            <label for="StartTime">Start Time</label>
+            <input type="time" id="StartTime" name="StartTime"
+                   value="@(DateTime.TryParse(Model.Filter?.StartTime, out var startTime) ? startTime.ToString("HH:mm") : "")" />
+        </div>
 
-    <!-- End Time Filter -->
-    <div>
-        <label for="EndTime">End Time</label>
-        <input type="time" id="EndTime" name="EndTime" 
-               value="@(DateTime.TryParse(Model.Filter?.EndTime, out var endTime) ? endTime.ToString("HH:mm") : "")" />
-    </div>
-    
-    <div>
-        <button type="submit">Filter</button>
-    </div>
-</form>
+        <!-- End Time Filter -->
+        <div>
+            <label for="EndTime">End Time</label>
+            <input type="time" id="EndTime" name="EndTime"
+                   value="@(DateTime.TryParse(Model.Filter?.EndTime, out var endTime) ? endTime.ToString("HH:mm") : "")" />
+        </div>
 
-@if (Model.Courses.Any())
-{
-    <h3>Filtered Courses</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Course Code</th>
-                <th>Section</th>
-                <th>Title</th>
-                <th>Instructor</th>
-                <th>Days</th>
-                <th>Start Time</th>
-                <th>End Time</th>
-                <th>Credits</th>
-                <th>Max Enrollment</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Courses.Select((value, index) => new { value, index }))
-            {
-                var rowClass = (item.index % 2 == 0) ? "even" : "odd";
-                <tr class="@rowClass">
-                    <td>@item.value.CourseCode</td>
-                    <td>@item.value.Section</td>
-                    <td>@item.value.Title</td>
-                    <td>@item.value.Instructor</td>
-                    <td>@item.value.Days</td>
-                    <td>@item.value.StartTime</td>
-                    <td>@item.value.EndTime</td>
-                    <td>@item.value.Credits</td>
-                    <td>@item.value.MaxEnrollment</td>
+        <div>
+            <button type="submit">Filter</button>
+        </div>
+    </form>
+
+    @if (Model.Courses.Any())
+    {
+        <h3 class="mt-4">Filtered Courses</h3>
+        <table class="table alt-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Section</th>
+                    <th>Title</th>
+                    <th>Instructor</th>
+                    <th>Days</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Credits</th>
+                    <th>Max Enrollment</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>No courses found with the specified filters.</p>
-}
-
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Courses.Select((value, index) => new { value, index }))
+                {
+                    <tr>
+                        <td>@item.value.CourseCode</td>
+                        <td>@item.value.Section</td>
+                        <td>@item.value.Title</td>
+                        <td>@item.value.Instructor</td>
+                        <td>@item.value.Days</td>
+                        <td>@item.value.StartTime</td>
+                        <td>@item.value.EndTime</td>
+                        <td>@item.value.Credits</td>
+                        <td>@item.value.MaxEnrollment</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     }
-
-    table th,
-    table td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
+    else
+    {
+        <p>No courses found with the specified filters.</p>
     }
-
-    table th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
-
-    .even {
-        background-color: #f9f9f9;
-    }
-
-    .odd {
-        background-color: #ffffff;
-    }
-
-    tr:hover {
-        background-color: #f1f1f1;
-    }
-</style>
+</div>
