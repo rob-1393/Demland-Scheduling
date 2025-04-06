@@ -5,8 +5,49 @@
     ViewData["Title"] = "Filter Classes";
 }
 
-<div class="page-content">
+<div class="page-content" style="max-width: 100%; overflow-x: auto;">
     <h2>Filter Classes</h2>
+
+    <style>
+    table.styled-table {
+        width: 100% !important;
+        border-collapse: separate !important;
+        border-spacing: 0 !important;
+        border: 2px solid #666 !important;
+        border-radius: 6px !important;
+        overflow: hidden !important;
+        margin-top: 20px !important;
+        background-color: transparent !important;
+        font-size: 0.95rem !important;
+    }
+
+    table.styled-table th,
+    table.styled-table td {
+        padding: 12px 16px !important;
+        border: 1px solid #444 !important;
+        color: #fff !important;
+        vertical-align: top !important;
+        text-align: left !important;
+        white-space: nowrap !important;
+    }
+
+    table.styled-table th {
+        background-color: #1a1a1a !important;
+        font-weight: bold !important;
+    }
+
+    table.styled-table tr:nth-child(odd) {
+        background-color: #2b2b2b !important;
+    }
+
+    table.styled-table tr:nth-child(even) {
+        background-color: #3a3a3a !important;
+    }
+
+    table.styled-table tr:hover {
+        background-color: #4b4b4b !important;
+    }
+    </style>
 
     <form method="get">
         <!-- Course Filter -->
@@ -61,7 +102,7 @@
     @if (Model.Courses.Any())
     {
         <h3 class="mt-4">Filtered Courses</h3>
-        <table class="table alt-table">
+        <table class="styled-table">
             <thead>
                 <tr>
                     <th>Course Code</th>
