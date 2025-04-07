@@ -12,7 +12,15 @@ namespace demlandscheduling.Pages.FilteringXML
         public List<Course> Courses { get; set; } = new List<Course>();
         public FilterModel Filter { get; set; } = new FilterModel();
 
-        public void OnGet(string? Course, string? Instructor, string? StartTime, string? EndTime)
+        public string SortOrder { get; set; } = "None";
+        public string SortMaxEnrollment { get; set; } = "None";
+        public string SortStartTime { get; set; } = "None";
+        public string SortEndTime { get; set; } = "None";
+        public string SortCredits { get; set; } = "None";
+
+        public void OnGet(
+            string? Course, string? Instructor, string? StartTime, string? EndTime,
+            string? sortOrder, string? sortMaxEnrollment, string? sortStartTime, string? sortEndTime, string? sortCredits)
         {
             string xmlPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "FilterPageXML.xml");
             if (!System.IO.File.Exists(xmlPath))
@@ -23,7 +31,6 @@ namespace demlandscheduling.Pages.FilteringXML
 
             LoadCourses(xmlPath);
 
-            // Store filter values
             Filter = new FilterModel
             {
                 Course = Course,
@@ -32,7 +39,6 @@ namespace demlandscheduling.Pages.FilteringXML
                 EndTime = string.IsNullOrWhiteSpace(EndTime) ? null : EndTime
             };
 
-            // Apply filtering based on filters
             Courses = Courses
                 .Where(c =>
                     (string.IsNullOrEmpty(Filter.Course) || c.CourseCode.Equals(Filter.Course, StringComparison.OrdinalIgnoreCase)) &&
@@ -41,7 +47,14 @@ namespace demlandscheduling.Pages.FilteringXML
                     (Filter.EndTime == null || (c.EndTime != null && string.Compare(c.EndTime, Filter.EndTime, StringComparison.Ordinal) <= 0)))
                 .ToList();
 
-            // Populate ViewData for dropdowns
+            if (sortOrder != null) SortOrder = sortOrder;
+            if (sortMaxEnrollment != null) SortMaxEnrollment = sortMaxEnrollment;
+            if (sortStartTime != null) SortStartTime = sortStartTime;
+            if (sortEndTime != null) SortEndTime = sortEndTime;
+            if (sortCredits != null) SortCredits = sortCredits;
+
+            ApplySorting();
+
             ViewData["Courses"] = Courses.Select(c => c.CourseCode).Distinct().ToList();
             ViewData["Instructors"] = Courses.Select(c => c.Instructor).Distinct().ToList();
         }
@@ -50,36 +63,63 @@ namespace demlandscheduling.Pages.FilteringXML
         {
             XDocument xmlDoc = XDocument.Load(xmlPath);
 
-            // Parse XML data into Course objects
             Courses = xmlDoc.Descendants("row")
                 .Select(c => new Course
                 {
-                    CourseCode = (string?)c.Element("Course") ?? "N/A",  // Maps to <Course>
-                    Section = (string?)c.Element("Section") ?? "N/A",  // Maps to <Section>
-                    Title = (string?)c.Element("ClassSchedDescrip") ?? "Unknown",  // Maps to <ClassSchedDescrip>
-                    Instructor = (string?)c.Element("TeacherDescrip") ?? "Unknown",  // Maps to <TeacherDescrip>
-                    Days = (string?)c.Element("Days") ?? "N/A",  // Maps to <Days>
-                    StartTime = (string?)c.Element("StartTime") ?? "N/A",  // Maps to <StartTime>
-                    EndTime = (string?)c.Element("EndTime") ?? "N/A",  // Maps to <EndTime>
-                    Credits = int.TryParse((string?)c.Element("Cr"), out int cr) ? cr : 0,  // Maps to <Cr>
-                    MaxEnrollment = int.TryParse((string?)c.Element("Max"), out int max) ? max : 0  // Maps to <Max>
+                    CourseCode = (string?)c.Element("Course") ?? "N/A",
+                    Section = (string?)c.Element("Section") ?? "N/A",
+                    Title = (string?)c.Element("ClassSchedDescrip") ?? "Unknown",
+                    Instructor = (string?)c.Element("TeacherDescrip") ?? "Unknown",
+                    Days = (string?)c.Element("Days") ?? "N/A",
+                    StartTime = (string?)c.Element("StartTime") ?? "N/A",
+                    EndTime = (string?)c.Element("EndTime") ?? "N/A",
+                    Credits = int.TryParse((string?)c.Element("Cr"), out int cr) ? cr : 0,
+                    MaxEnrollment = int.TryParse((string?)c.Element("Max"), out int max) ? max : 0
                 })
                 .ToList();
 
             Console.WriteLine($"Loaded {Courses.Count} courses from XML.");
         }
 
+        private void ApplySorting()
+        {
+            if (SortOrder == "Ascending")
+                Courses = Courses.OrderBy(c => c.CourseCode).ThenBy(c => int.TryParse(c.CourseCode.Split('-')[1], out var n) ? n : int.MaxValue).ToList();
+            else if (SortOrder == "Descending")
+                Courses = Courses.OrderByDescending(c => c.CourseCode).ThenByDescending(c => int.TryParse(c.CourseCode.Split('-')[1], out var n) ? n : int.MinValue).ToList();
+
+            if (SortMaxEnrollment == "Ascending")
+                Courses = Courses.OrderBy(c => c.MaxEnrollment).ToList();
+            else if (SortMaxEnrollment == "Descending")
+                Courses = Courses.OrderByDescending(c => c.MaxEnrollment).ToList();
+
+            if (SortStartTime == "Ascending")
+                Courses = Courses.OrderBy(c => c.StartTime).ToList();
+            else if (SortStartTime == "Descending")
+                Courses = Courses.OrderByDescending(c => c.StartTime).ToList();
+
+            if (SortEndTime == "Ascending")
+                Courses = Courses.OrderBy(c => c.EndTime).ToList();
+            else if (SortEndTime == "Descending")
+                Courses = Courses.OrderByDescending(c => c.EndTime).ToList();
+
+            if (SortCredits == "Ascending")
+                Courses = Courses.OrderBy(c => c.Credits).ToList();
+            else if (SortCredits == "Descending")
+                Courses = Courses.OrderByDescending(c => c.Credits).ToList();
+        }
+
         public class Course
         {
-            public string CourseCode { get; set; } = "N/A";  // Matches <Course>
-            public string Section { get; set; } = "N/A";  // Matches <Section>
-            public string Title { get; set; } = "Unknown";  // Matches <ClassSchedDescrip>
-            public string Instructor { get; set; } = "Unknown";  // Matches <TeacherDescrip>
-            public string Days { get; set; } = "N/A";  // Matches <Days>
-            public string StartTime { get; set; } = "N/A";  // Matches <StartTime>
-            public string EndTime { get; set; } = "N/A";  // Matches <EndTime>
-            public int Credits { get; set; } = 0;  // Matches <Cr>
-            public int MaxEnrollment { get; set; } = 0;  // Matches <Max>
+            public string CourseCode { get; set; } = "N/A";
+            public string Section { get; set; } = "N/A";
+            public string Title { get; set; } = "Unknown";
+            public string Instructor { get; set; } = "Unknown";
+            public string Days { get; set; } = "N/A";
+            public string StartTime { get; set; } = "N/A";
+            public string EndTime { get; set; } = "N/A";
+            public int Credits { get; set; } = 0;
+            public int MaxEnrollment { get; set; } = 0;
         }
 
         public class FilterModel

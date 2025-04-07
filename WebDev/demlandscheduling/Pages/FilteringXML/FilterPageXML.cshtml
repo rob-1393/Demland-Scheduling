@@ -47,6 +47,27 @@
     table.styled-table tr:hover {
         background-color: #4b4b4b !important;
     }
+
+    .filter-button, .reset-button {
+        background-color: #e0e0e0;
+        color: black;
+        border: 1px solid black;
+        padding: 0.0625in 0.125in;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .filter-button:hover, .reset-button:hover {
+        background-color: #d0d0d0;
+    }
+
+    .filter-button {
+        margin-right: 10px;
+    }
     </style>
 
     <form method="get">
@@ -95,7 +116,8 @@
         </div>
 
         <div>
-            <button type="submit">Filter</button>
+            <button type="submit" class="filter-button">Filter</button>
+            <a href="/FilteringXML/FilterPageXML" class="filter-button reset-button">Reset Filters</a>
         </div>
     </form>
 
@@ -105,15 +127,35 @@
         <table class="styled-table">
             <thead>
                 <tr>
-                    <th>Course Code</th>
+                    <th>Course Code
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortOrder=@(Model.SortOrder == "Ascending" ? "Descending" : Model.SortOrder == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortOrder == "Ascending" ? "↑" : Model.SortOrder == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
                     <th>Section</th>
                     <th>Title</th>
                     <th>Instructor</th>
                     <th>Days</th>
-                    <th>Start Time</th>
-                    <th>End Time</th>
-                    <th>Credits</th>
-                    <th>Max Enrollment</th>
+                    <th>Start Time
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortStartTime=@(Model.SortStartTime == "Ascending" ? "Descending" : Model.SortStartTime == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortStartTime == "Ascending" ? "↑" : Model.SortStartTime == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
+                    <th>End Time
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortEndTime=@(Model.SortEndTime == "Ascending" ? "Descending" : Model.SortEndTime == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortEndTime == "Ascending" ? "↑" : Model.SortEndTime == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
+                    <th>Credits
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortCredits=@(Model.SortCredits == "Ascending" ? "Descending" : Model.SortCredits == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortCredits == "Ascending" ? "↑" : Model.SortCredits == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
+                    <th>Max Enrollment
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortMaxEnrollment=@(Model.SortMaxEnrollment == "Ascending" ? "Descending" : Model.SortMaxEnrollment == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortMaxEnrollment == "Ascending" ? "↑" : Model.SortMaxEnrollment == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
                 </tr>
             </thead>
             <tbody>
