@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="~/demlandscheduling.styles.css" asp-append-version="true" />
 </head>
 <body class="full-page">
-    <header>
-        <nav class="navbar navbar-expand-sm border-bottom shadow-sm mb-3 custom-navbar w-100">
-            <div class="container">
+
+    <!-- Header with solid purple background -->
+    <header style="background-color: #4b2e83;">
+        <nav class="navbar navbar-expand-sm custom-navbar w-100" style="box-shadow: none; border-bottom: none;">
+            <div class="container" style="background-color: transparent;">
                 <a class="navbar-brand text-white" asp-area="" asp-page="/Index">demlandscheduling</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,14 +39,16 @@
         </nav>
     </header>
 
+    <!-- Main content -->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="footer w-100">
-        <div class="container">
+    <!-- Footer with solid purple background -->
+    <footer class="footer w-100" style="background-color: #4b2e83;">
+        <div class="container" style="background-color: transparent;">
             &copy; 2025 - demlandscheduling - <a class="text-white" asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>

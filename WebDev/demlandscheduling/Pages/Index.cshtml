@@ -1,71 +1,105 @@
 ﻿@page
 @model demlandscheduling.Pages.Index.IndexModel
-<!-- The page Designates the Razor Page as a handler for HTTP requests, thus allowing it to be a standalone page -->
-<!-- The model Specifies the model "IndexModel" to be associated with the page, which also contains the page's logic and data, which also includes DemlandDataList -->
 @{
     ViewData["Title"] = "DemlandData Table"; 
 }
-<!-- Sets the title of the page -->
+
 <h2>DemlandData</h2>
-<!-- Displays a heading for the table -->
 
-<!-- The coding above checks if DemlandDataList exists and contains at least one set of records. 
-So if the DemlandDataList contains data, it will continue to proceed with rendering the table.
-If it's blank, the DemlandDataList will display a message instead, informing the user that there is no data to display -->
-
-<!-- The Table Header <thead> defines the column headers for each of the fields located in DemlandDataList. 
-Meanwhile the body of the table continously goes through each data/item in DemlandDataList and creates it into a table row -->
 @if (Model.DemlandDataList != null && Model.DemlandDataList.Any())
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Agreement Number</th>
-                <th>Schedule ID</th>
-                <th>Delivery Method</th>
-                <th>Course</th>
-                <th>Section</th>
-                <th>Days</th>
-                <th>Start Time</th> 
-                <th>End Time</th>
-                <th>Credits</th>
-                <th>Max Enrollment</th>
-                <th>Registered</th>
-                <th>Teacher Description</th>
-                <th>Email</th>
-                <th>Secondary Teachers</th>
-                <th>Class Start</th>
-                <th>Class End</th>
-                <th>Class Schedule Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.DemlandDataList)
-            {
+    <div class="page-content" style="max-width: 100%; overflow-x: auto;">
+        <style>
+        table.styled-table {
+            width: 100% !important;
+            border-collapse: separate !important;
+            border-spacing: 0 !important;
+            border: 2px solid #666 !important;
+            border-radius: 6px !important;
+            overflow: hidden !important;
+            margin-top: 20px !important;
+            background-color: transparent !important;
+            font-size: 0.95rem !important;
+        }
+
+        table.styled-table th,
+        table.styled-table td {
+            padding: 12px 16px !important;
+            border: 1px solid #444 !important;
+            color: #fff !important;
+            vertical-align: top !important;
+            text-align: left !important;
+            white-space: nowrap !important;
+        }
+
+        table.styled-table th {
+            background-color: #1a1a1a !important;
+            font-weight: bold !important;
+        }
+
+        table.styled-table tr:nth-child(odd) {
+            background-color: #2b2b2b !important;
+        }
+
+        table.styled-table tr:nth-child(even) {
+            background-color: #3a3a3a !important;
+        }
+
+        table.styled-table tr:hover {
+            background-color: #4b4b4b !important;
+        }
+        </style>
+
+        <table class="styled-table">
+            <thead>
                 <tr>
-                    <td>@item.AgreementNumber</td>
-                    <td>@item.SchedID</td>
-                    <td>@item.DeliveryMethod</td>
-                    <td>@item.Course</td>
-                    <td>@item.Section</td>
-                    <td>@item.Days</td>
-                    <td>@item.StartTime?.ToString("hh:mm tt")</td> <!-- Format Start Time -->
-                    <td>@item.EndTime?.ToString("hh:mm tt")</td>   <!-- Format End Time -->
-                    <td>@item.Cr</td>
-                    <td>@item.Max</td>
-                    <td>@item.Reg</td>
-                    <td>@item.TeacherDescrip</td>
-                    <td>@item.Email</td>
-                    <td>@item.SecondaryTeachers</td>
-                    <td>@item.ClassStart?.ToString("MM/dd/yyyy")</td>  <!-- Format Date -->
-                    <td>@item.ClassEnd?.ToString("MM/dd/yyyy")</td>    <!-- Format Date -->
-                    <td>@item.ClassSchedDescrip</td>
+                    <th>Agreement Number</th>
+                    <th>Schedule ID</th>
+                    <th>Delivery Method</th>
+                    <th>Course</th>
+                    <th>Section</th>
+                    <th>Days</th>
+                    <th>Start Time</th> 
+                    <th>End Time</th>
+                    <th>Credits</th>
+                    <th>Max Enrollment</th>
+                    <th>Registered</th>
+                    <th>Teacher Description</th>
+                    <th>Email</th>
+                    <th>Secondary Teachers</th>
+                    <th>Class Start</th>
+                    <th>Class End</th>
+                    <th>Class Schedule Description</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.DemlandDataList)
+                {
+                    <tr>
+                        <td>@item.AgreementNumber</td>
+                        <td>@item.SchedID</td>
+                        <td>@item.DeliveryMethod</td>
+                        <td>@item.Course</td>
+                        <td>@item.Section</td>
+                        <td>@item.Days</td>
+                        <td>@item.StartTime?.ToString("hh:mm tt")</td>
+                        <td>@item.EndTime?.ToString("hh:mm tt")</td>
+                        <td>@item.Cr</td>
+                        <td>@item.Max</td>
+                        <td>@item.Reg</td>
+                        <td>@item.TeacherDescrip</td>
+                        <td>@item.Email</td>
+                        <td>@item.SecondaryTeachers</td>
+                        <td>@item.ClassStart?.ToString("MM/dd/yyyy")</td>
+                        <td>@item.ClassEnd?.ToString("MM/dd/yyyy")</td>
+                        <td>@item.ClassSchedDescrip</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
 else
 {
-    <p>No data available to display.</p> <!-- Message when the list is empty or null -->
+    <p>No data available to display.</p>
 }
