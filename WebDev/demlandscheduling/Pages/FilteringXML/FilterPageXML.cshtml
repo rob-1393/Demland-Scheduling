@@ -1,0 +1,183 @@
+@page "/FilteringXML/FilterPageXML"
+@model demlandscheduling.Pages.FilteringXML.FilterPageXML
+
+@{
+    ViewData["Title"] = "Filter Classes";
+}
+
+<div class="page-content" style="max-width: 100%; overflow-x: auto;">
+    <h2>Filter Classes</h2>
+
+    <style>
+    table.styled-table {
+        width: 100% !important;
+        border-collapse: separate !important;
+        border-spacing: 0 !important;
+        border: 2px solid #666 !important;
+        border-radius: 6px !important;
+        overflow: hidden !important;
+        margin-top: 20px !important;
+        background-color: transparent !important;
+        font-size: 0.95rem !important;
+    }
+
+    table.styled-table th,
+    table.styled-table td {
+        padding: 12px 16px !important;
+        border: 1px solid #444 !important;
+        color: #fff !important;
+        vertical-align: top !important;
+        text-align: left !important;
+        white-space: nowrap !important;
+    }
+
+    table.styled-table th {
+        background-color: #1a1a1a !important;
+        font-weight: bold !important;
+    }
+
+    table.styled-table tr:nth-child(odd) {
+        background-color: #2b2b2b !important;
+    }
+
+    table.styled-table tr:nth-child(even) {
+        background-color: #3a3a3a !important;
+    }
+
+    table.styled-table tr:hover {
+        background-color: #4b4b4b !important;
+    }
+
+    .filter-button, .reset-button {
+        background-color: #e0e0e0;
+        color: black;
+        border: 1px solid black;
+        padding: 0.0625in 0.125in;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .filter-button:hover, .reset-button:hover {
+        background-color: #d0d0d0;
+    }
+
+    .filter-button {
+        margin-right: 10px;
+    }
+    </style>
+
+    <form method="get">
+        <!-- Course Filter -->
+        <div>
+            <label for="Course">Course</label>
+            <select id="Course" name="Course">
+                <option value="">Select Course</option>
+                @if (ViewData["Courses"] is List<string> courses)
+                {
+                    @foreach (var course in courses)
+                    {
+                        <option value="@course" selected="@(course == Model.Filter?.Course ? "selected" : null)">@course</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <!-- Instructor Filter -->
+        <div>
+            <label for="Instructor">Instructor</label>
+            <select id="Instructor" name="Instructor">
+                <option value="">Select Instructor</option>
+                @if (ViewData["Instructors"] is List<string> instructors)
+                {
+                    @foreach (var instructor in instructors)
+                    {
+                        <option value="@instructor" selected="@(instructor == Model.Filter?.Instructor ? "selected" : null)">@instructor</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <!-- Start Time Filter -->
+        <div>
+            <label for="StartTime">Start Time</label>
+            <input type="time" id="StartTime" name="StartTime"
+                   value="@(DateTime.TryParse(Model.Filter?.StartTime, out var startTime) ? startTime.ToString("HH:mm") : "")" />
+        </div>
+
+        <!-- End Time Filter -->
+        <div>
+            <label for="EndTime">End Time</label>
+            <input type="time" id="EndTime" name="EndTime"
+                   value="@(DateTime.TryParse(Model.Filter?.EndTime, out var endTime) ? endTime.ToString("HH:mm") : "")" />
+        </div>
+
+        <div>
+            <button type="submit" class="filter-button">Filter</button>
+            <a href="/FilteringXML/FilterPageXML" class="filter-button reset-button">Reset Filters</a>
+        </div>
+    </form>
+
+    @if (Model.Courses.Any())
+    {
+        <h3 class="mt-4">Filtered Courses</h3>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Course Code
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortOrder=@(Model.SortOrder == "Ascending" ? "Descending" : Model.SortOrder == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortOrder == "Ascending" ? "↑" : Model.SortOrder == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
+                    <th>Section</th>
+                    <th>Title</th>
+                    <th>Instructor</th>
+                    <th>Days</th>
+                    <th>Start Time
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortStartTime=@(Model.SortStartTime == "Ascending" ? "Descending" : Model.SortStartTime == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortStartTime == "Ascending" ? "↑" : Model.SortStartTime == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
+                    <th>End Time
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortEndTime=@(Model.SortEndTime == "Ascending" ? "Descending" : Model.SortEndTime == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortEndTime == "Ascending" ? "↑" : Model.SortEndTime == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
+                    <th>Credits
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortCredits=@(Model.SortCredits == "Ascending" ? "Descending" : Model.SortCredits == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortCredits == "Ascending" ? "↑" : Model.SortCredits == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
+                    <th>Max Enrollment
+                        <a href="?Course=@Model.Filter?.Course&Instructor=@Model.Filter?.Instructor&StartTime=@Model.Filter?.StartTime&EndTime=@Model.Filter?.EndTime&sortMaxEnrollment=@(Model.SortMaxEnrollment == "Ascending" ? "Descending" : Model.SortMaxEnrollment == "Descending" ? "None" : "Ascending")">
+                            <span>@(Model.SortMaxEnrollment == "Ascending" ? "↑" : Model.SortMaxEnrollment == "Descending" ? "↓" : "↕")</span>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Courses.Select((value, index) => new { value, index }))
+                {
+                    <tr>
+                        <td>@item.value.CourseCode</td>
+                        <td>@item.value.Section</td>
+                        <td>@item.value.Title</td>
+                        <td>@item.value.Instructor</td>
+                        <td>@item.value.Days</td>
+                        <td>@item.value.StartTime</td>
+                        <td>@item.value.EndTime</td>
+                        <td>@item.value.Credits</td>
+                        <td>@item.value.MaxEnrollment</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No courses found with the specified filters.</p>
+    }
+</div>

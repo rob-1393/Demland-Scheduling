@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WFZ+phHhk77OZBULvO71rLgvr5tHS4vvO0E1xjaW5pM=",
+  "Hash": "ctRmyDdgGIphLbli9T+yzid33cjCffHlVUpn/taADeI=",
   "Source": "demlandscheduling",
   "BasePath": "_content/demlandscheduling",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\0rxfjb4b5h-uhfki39pmi.gz",
+      "SourceId": "demlandscheduling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/demlandscheduling",
+      "RelativePath": "FilterPageXML#[.{fingerprint=uhfki39pmi}]?.xml.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\FilterPageXML.xml",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1zy5rvm480",
+      "Integrity": "TXeufrpC97lFMzwxGvMmf3VQfq+fCW9YX/dYWRxEJpo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\FilterPageXML.xml"
     },
     {
       "Identity": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\13os7y71x3-kbrnm935zg.gz",
@@ -164,12 +185,12 @@
       "OriginalItemSpec": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-svgnti2ui0.gz",
+      "Identity": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-94lrin00lm.gz",
       "SourceId": "demlandscheduling",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/demlandscheduling",
-      "RelativePath": "demlandscheduling#[.{fingerprint=svgnti2ui0}]!.bundle.scp.css.gz",
+      "RelativePath": "demlandscheduling#[.{fingerprint=94lrin00lm}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -178,8 +199,8 @@
       "RelatedAsset": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\demlandscheduling.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5f96zt6lid",
-      "Integrity": "MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=",
+      "Fingerprint": "jbfimxjspu",
+      "Integrity": "D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\demlandscheduling.bundle.scp.css"
@@ -311,12 +332,12 @@
       "OriginalItemSpec": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-svgnti2ui0.gz",
+      "Identity": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-94lrin00lm.gz",
       "SourceId": "demlandscheduling",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/demlandscheduling",
-      "RelativePath": "demlandscheduling#[.{fingerprint=svgnti2ui0}]?.styles.css.gz",
+      "RelativePath": "demlandscheduling#[.{fingerprint=94lrin00lm}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -325,8 +346,8 @@
       "RelatedAsset": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\bundle\\demlandscheduling.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5f96zt6lid",
-      "Integrity": "MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=",
+      "Fingerprint": "jbfimxjspu",
+      "Integrity": "D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\bundle\\demlandscheduling.styles.css"
@@ -1375,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "svgnti2ui0",
-      "Integrity": "OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=",
+      "Fingerprint": "94lrin00lm",
+      "Integrity": "V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\bundle\\demlandscheduling.styles.css"
@@ -1396,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "svgnti2ui0",
-      "Integrity": "OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=",
+      "Fingerprint": "94lrin00lm",
+      "Integrity": "V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\demlandscheduling.bundle.scp.css"
@@ -1443,6 +1464,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\FilterPageXML.xml",
+      "SourceId": "demlandscheduling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\",
+      "BasePath": "_content/demlandscheduling",
+      "RelativePath": "FilterPageXML#[.{fingerprint}]?.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhfki39pmi",
+      "Integrity": "cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FilterPageXML.xml"
     },
     {
       "Identity": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\js\\site.js",
@@ -3026,13 +3068,13 @@
       ]
     },
     {
-      "Route": "demlandscheduling.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-svgnti2ui0.gz",
+      "Route": "demlandscheduling.94lrin00lm.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-94lrin00lm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001845018450"
+          "Quality": "0.001071811361"
         }
       ],
       "ResponseHeaders": [
@@ -3042,19 +3084,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "932"
         },
         {
           "Name": "ETag",
-          "Value": "\"MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=\""
+          "Value": "\"D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3070,18 +3112,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=\""
+          "Value": "W/\"V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "94lrin00lm"
+        },
+        {
+          "Name": "label",
+          "Value": "demlandscheduling.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo="
+          "Value": "sha256-V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I="
         }
       ]
     },
     {
-      "Route": "demlandscheduling.bundle.scp.css",
+      "Route": "demlandscheduling.94lrin00lm.bundle.scp.css",
       "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\demlandscheduling.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3091,7 +3141,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "3625"
         },
         {
           "Name": "Content-Type",
@@ -3099,258 +3149,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=\""
+          "Value": "\"V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo="
-        }
-      ]
-    },
-    {
-      "Route": "demlandscheduling.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-svgnti2ui0.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "541"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s="
-        }
-      ]
-    },
-    {
-      "Route": "demlandscheduling.styles.css",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-svgnti2ui0.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001845018450"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "541"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo="
-        }
-      ]
-    },
-    {
-      "Route": "demlandscheduling.styles.css",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\bundle\\demlandscheduling.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1135"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo="
-        }
-      ]
-    },
-    {
-      "Route": "demlandscheduling.styles.css.gz",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-svgnti2ui0.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "541"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s="
-        }
-      ]
-    },
-    {
-      "Route": "demlandscheduling.svgnti2ui0.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-svgnti2ui0.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001845018450"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "541"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "svgnti2ui0"
+          "Value": "94lrin00lm"
         },
         {
           "Name": "label",
@@ -3358,13 +3171,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo="
+          "Value": "sha256-V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I="
         }
       ]
     },
     {
-      "Route": "demlandscheduling.svgnti2ui0.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\demlandscheduling.bundle.scp.css",
+      "Route": "demlandscheduling.94lrin00lm.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-94lrin00lm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3373,7 +3186,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "932"
         },
         {
           "Name": "Content-Type",
@@ -3381,56 +3194,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=\""
+          "Value": "\"D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "svgnti2ui0"
-        },
-        {
-          "Name": "label",
-          "Value": "demlandscheduling.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo="
-        }
-      ]
-    },
-    {
-      "Route": "demlandscheduling.svgnti2ui0.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-svgnti2ui0.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "541"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3448,7 +3216,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "svgnti2ui0"
+          "Value": "94lrin00lm"
         },
         {
           "Name": "label",
@@ -3456,18 +3224,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s="
+          "Value": "sha256-D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg="
         }
       ]
     },
     {
-      "Route": "demlandscheduling.svgnti2ui0.styles.css",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-svgnti2ui0.gz",
+      "Route": "demlandscheduling.94lrin00lm.styles.css",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-94lrin00lm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001845018450"
+          "Quality": "0.001071811361"
         }
       ],
       "ResponseHeaders": [
@@ -3477,15 +3245,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "932"
         },
         {
           "Name": "ETag",
-          "Value": "\"MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=\""
+          "Value": "\"D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3505,13 +3273,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=\""
+          "Value": "W/\"V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "svgnti2ui0"
+          "Value": "94lrin00lm"
         },
         {
           "Name": "label",
@@ -3519,12 +3287,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo="
+          "Value": "sha256-V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I="
         }
       ]
     },
     {
-      "Route": "demlandscheduling.svgnti2ui0.styles.css",
+      "Route": "demlandscheduling.94lrin00lm.styles.css",
       "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\bundle\\demlandscheduling.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3534,7 +3302,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "3625"
         },
         {
           "Name": "Content-Type",
@@ -3542,11 +3310,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo=\""
+          "Value": "\"V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3556,7 +3324,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "svgnti2ui0"
+          "Value": "94lrin00lm"
         },
         {
           "Name": "label",
@@ -3564,13 +3332,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OBoTL5JUmEBAwXsOll1k7gB9cV+kJwrlsRAQ5xquBZo="
+          "Value": "sha256-V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I="
         }
       ]
     },
     {
-      "Route": "demlandscheduling.svgnti2ui0.styles.css.gz",
-      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-svgnti2ui0.gz",
+      "Route": "demlandscheduling.94lrin00lm.styles.css.gz",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-94lrin00lm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3579,7 +3347,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "932"
         },
         {
           "Name": "Content-Type",
@@ -3587,11 +3355,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s=\""
+          "Value": "\"D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:30:51 GMT"
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3609,7 +3377,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "svgnti2ui0"
+          "Value": "94lrin00lm"
         },
         {
           "Name": "label",
@@ -3617,7 +3385,281 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MaxFE8MxElVmPqDLT1KD9a7576bgHvINA6nORdIYL3s="
+          "Value": "sha256-D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg="
+        }
+      ]
+    },
+    {
+      "Route": "demlandscheduling.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-94lrin00lm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001071811361"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "932"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I="
+        }
+      ]
+    },
+    {
+      "Route": "demlandscheduling.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\demlandscheduling.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I="
+        }
+      ]
+    },
+    {
+      "Route": "demlandscheduling.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\2h0w4dchia-94lrin00lm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg="
+        }
+      ]
+    },
+    {
+      "Route": "demlandscheduling.styles.css",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-94lrin00lm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001071811361"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "932"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I="
+        }
+      ]
+    },
+    {
+      "Route": "demlandscheduling.styles.css",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\bundle\\demlandscheduling.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V04NqG+fIDrwi+reRNDqvj2GbuSUc8n/gANr7v8tJ7I="
+        }
+      ]
+    },
+    {
+      "Route": "demlandscheduling.styles.css.gz",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\80om1cz1x7-94lrin00lm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D0hOitPr9bQ8O7bQlfmvLaf+LbKEahM6Miai6IpTleg="
         }
       ]
     },
@@ -3916,6 +3958,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "FilterPageXML.uhfki39pmi.xml",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\0rxfjb4b5h-uhfki39pmi.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000618046972"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1617"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TXeufrpC97lFMzwxGvMmf3VQfq+fCW9YX/dYWRxEJpo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhfki39pmi"
+        },
+        {
+          "Name": "label",
+          "Value": "FilterPageXML.xml"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs="
+        }
+      ]
+    },
+    {
+      "Route": "FilterPageXML.uhfki39pmi.xml",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\FilterPageXML.xml",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhfki39pmi"
+        },
+        {
+          "Name": "label",
+          "Value": "FilterPageXML.xml"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs="
+        }
+      ]
+    },
+    {
+      "Route": "FilterPageXML.uhfki39pmi.xml.gz",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\0rxfjb4b5h-uhfki39pmi.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TXeufrpC97lFMzwxGvMmf3VQfq+fCW9YX/dYWRxEJpo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhfki39pmi"
+        },
+        {
+          "Name": "label",
+          "Value": "FilterPageXML.xml.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TXeufrpC97lFMzwxGvMmf3VQfq+fCW9YX/dYWRxEJpo="
+        }
+      ]
+    },
+    {
+      "Route": "FilterPageXML.xml",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\0rxfjb4b5h-uhfki39pmi.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000618046972"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1617"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TXeufrpC97lFMzwxGvMmf3VQfq+fCW9YX/dYWRxEJpo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs="
+        }
+      ]
+    },
+    {
+      "Route": "FilterPageXML.xml",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\FilterPageXML.xml",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs="
+        }
+      ]
+    },
+    {
+      "Route": "FilterPageXML.xml.gz",
+      "AssetFile": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\compressed\\0rxfjb4b5h-uhfki39pmi.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TXeufrpC97lFMzwxGvMmf3VQfq+fCW9YX/dYWRxEJpo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 18:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TXeufrpC97lFMzwxGvMmf3VQfq+fCW9YX/dYWRxEJpo="
         }
       ]
     },
