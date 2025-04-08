@@ -7,3 +7,5 @@ namespace demlandscheduling.DataModels
         public string? Instructor {get; set;} //maps to the Instructor column in the CourseData table
     }
 }
+
+//CourseData.cs defines our data model which maps to a CourseData table inside the DemlandData SQL database

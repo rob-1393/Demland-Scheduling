@@ -21,3 +21,5 @@ namespace demlandscheduling.DataModels
         public string? ClassSchedDescrip {get; set; } //maps to the ClassSchedDescrip column in the DemlandData table
     }
 }
+//DemlanData.cs maps to the DemlandData table in the SQL Server databse which is demlandscheduling.
+//So it is created to be a model class, which can be used in our Razor Pages to allow us retrieve, manipulate, and display the scheduling information for the courses.
