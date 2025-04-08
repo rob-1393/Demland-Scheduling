@@ -651,12 +651,12 @@ def main():
     # projects the excel data forward and returns a pandas dataframe
     print("Begin projection...")
     projected_classes = project_classes(temp_excel_data, num_of_semesters)
-    export_xml(projected_classes, "step1_project_classes")
+    #export_xml(projected_classes, "step1_project_classes")
     
     # assign a professor for each class in the projected data
     print("Begin assigning professors...")
     assigned_prof_classes = assign_profs(temp_excel_data, projected_classes)
-    export_xml(assigned_prof_classes, "step2_assign_professors")
+    #export_xml(assigned_prof_classes, "step2_assign_professors")
     print("Assigned professors.\n")
     
     # 
@@ -672,11 +672,11 @@ def main():
     
     # This was something i used a lot during testing, it copied the whole output to my clipboard.
     # it did have issues when using it on Linux, so use it if you want.
-    schedule.to_clipboard(index=False)
+    #schedule.to_clipboard(index=False)
 
     # export the dataframe to an XML file located under /exports
     print("\nExporting schedule to XML...")
-    export_xml(final_schedule, "step3_resolve_conflicts")
+    export_xml(final_schedule, "final_schedule")
     print("Finished exporting.\n")
 
     # export the dataframe to an excel file located under /exports
