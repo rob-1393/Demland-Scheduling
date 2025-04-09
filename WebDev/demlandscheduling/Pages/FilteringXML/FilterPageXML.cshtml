@@ -4,10 +4,10 @@
 @{
     ViewData["Title"] = "Filter Classes";
 }
-
+<!-- Sets up the page route in page. Connects the page to the backend logic in FilterPage.cshtml.cs. Laslty, the ViewData defines the browser tab title when nevigating to the page -->
 <div class="page-content" style="max-width: 100%; overflow-x: auto;">
     <h2>Filter Classes</h2>
-
+<!-- Stylizes the table and filter button below -->
     <style>
     table.styled-table {
         width: 100% !important;
@@ -69,7 +69,7 @@
         margin-right: 10px;
     }
     </style>
-
+<!-- Section contains all filtering inputs, which are pssed to the backend using query parameters -->
     <form method="get">
         <!-- Course Filter -->
         <div>
@@ -120,7 +120,7 @@
             <a href="/FilteringXML/FilterPageXML" class="filter-button reset-button">Reset Filters</a>
         </div>
     </form>
-
+<!-- Below checks if any courses matched the filters. If so, displays a result table. If not, shows a message indicating that nothing can be found. -->
     @if (Model.Courses.Any())
     {
         <h3 class="mt-4">Filtered Courses</h3>

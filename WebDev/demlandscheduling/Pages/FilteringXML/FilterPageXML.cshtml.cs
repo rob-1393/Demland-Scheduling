@@ -7,17 +7,17 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace demlandscheduling.Pages.FilteringXML
 {
-    public class FilterPageXML : PageModel
+    public class FilterPageXML : PageModel //Powers the /FilteringXMl/FilterPageXML Razor page.
     {
         public List<Course> Courses { get; set; } = new List<Course>();
         public FilterModel Filter { get; set; } = new FilterModel();
 
-        public string SortOrder { get; set; } = "None";
+        public string SortOrder { get; set; } = "None"; // Public string sort tracks the sorting state.
         public string SortMaxEnrollment { get; set; } = "None";
         public string SortStartTime { get; set; } = "None";
         public string SortEndTime { get; set; } = "None";
         public string SortCredits { get; set; } = "None";
-
+// Below in public void loads the XML file fromn the wwwroot folder, parses the course records from XML into Course objects, stores filter values passed in the URL, sorts the list based on our sorting parameters and will lastly save the dropdown values in Viewdata.
         public void OnGet(
             string? Course, string? Instructor, string? StartTime, string? EndTime,
             string? sortOrder, string? sortMaxEnrollment, string? sortStartTime, string? sortEndTime, string? sortCredits)
@@ -59,7 +59,7 @@ namespace demlandscheduling.Pages.FilteringXML
             ViewData["Instructors"] = Courses.Select(c => c.Instructor).Distinct().ToList();
         }
 
-        private void LoadCourses(string xmlPath)
+        private void LoadCourses(string xmlPath) // Loads the XML file from disk and converts each row in the XML into a course cobject.
         {
             XDocument xmlDoc = XDocument.Load(xmlPath);
 
@@ -81,7 +81,7 @@ namespace demlandscheduling.Pages.FilteringXML
             Console.WriteLine($"Loaded {Courses.Count} courses from XML.");
         }
 
-        private void ApplySorting()
+        private void ApplySorting() // Applies sorting logic based on the current sort selections
         {
             if (SortOrder == "Ascending")
                 Courses = Courses.OrderBy(c => c.CourseCode).ThenBy(c => int.TryParse(c.CourseCode.Split('-')[1], out var n) ? n : int.MaxValue).ToList();
@@ -109,7 +109,7 @@ namespace demlandscheduling.Pages.FilteringXML
                 Courses = Courses.OrderByDescending(c => c.Credits).ToList();
         }
 
-        public class Course
+        public class Course // Defines our structure for one course and etc.
         {
             public string CourseCode { get; set; } = "N/A";
             public string Section { get; set; } = "N/A";
@@ -122,7 +122,7 @@ namespace demlandscheduling.Pages.FilteringXML
             public int MaxEnrollment { get; set; } = 0;
         }
 
-        public class FilterModel
+        public class FilterModel //Holds the values the user selected in the filter form on the page.
         {
             public string? Course { get; set; }
             public string? Instructor { get; set; }
