@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"667"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Feb 2025 00:30:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/demlandscheduling/demlandscheduling.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\demlandscheduling.svgnti2ui0.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/demlandscheduling/demlandscheduling.94lrin00lm.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\demlandscheduling.94lrin00lm.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OBoTL5JUmEBAwXsOll1k7gB9cV\u002BkJwrlsRAQ5xquBZo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OBoTL5JUmEBAwXsOll1k7gB9cV\u002BkJwrlsRAQ5xquBZo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Feb 2025 00:30:51 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"94lrin00lm"},{"Name":"integrity","Value":"sha256-V04NqG\u002BfIDrwi\u002BreRNDqvj2GbuSUc8n/gANr7v8tJ7I="},{"Name":"label","Value":"_content/demlandscheduling/demlandscheduling.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3625"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022V04NqG\u002BfIDrwi\u002BreRNDqvj2GbuSUc8n/gANr7v8tJ7I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Apr 2025 18:56:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/demlandscheduling/demlandscheduling.svgnti2ui0.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\demlandscheduling.svgnti2ui0.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/demlandscheduling/demlandscheduling.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\demlandscheduling.94lrin00lm.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"svgnti2ui0"},{"Name":"integrity","Value":"sha256-OBoTL5JUmEBAwXsOll1k7gB9cV\u002BkJwrlsRAQ5xquBZo="},{"Name":"label","Value":"_content/demlandscheduling/demlandscheduling.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OBoTL5JUmEBAwXsOll1k7gB9cV\u002BkJwrlsRAQ5xquBZo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Feb 2025 00:30:51 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-V04NqG\u002BfIDrwi\u002BreRNDqvj2GbuSUc8n/gANr7v8tJ7I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3625"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022V04NqG\u002BfIDrwi\u002BreRNDqvj2GbuSUc8n/gANr7v8tJ7I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Apr 2025 18:56:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/demlandscheduling/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -35,6 +35,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Feb 2025 00:30:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/demlandscheduling/FilterPageXML.uhfki39pmi.xml">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FilterPageXML.xml'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uhfki39pmi"},{"Name":"integrity","Value":"sha256-cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs="},{"Name":"label","Value":"_content/demlandscheduling/FilterPageXML.xml"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19341"},{"Name":"Content-Type","Value":"text/xml"},{"Name":"ETag","Value":"\u0022cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Apr 2025 18:58:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/demlandscheduling/FilterPageXML.xml">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FilterPageXML.xml'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19341"},{"Name":"Content-Type","Value":"text/xml"},{"Name":"ETag","Value":"\u0022cplVW9W6URsxDAKyjYVc2UHjtic3fSNSA22qI4pR5cs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Apr 2025 18:58:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/demlandscheduling/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

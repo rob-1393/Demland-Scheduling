@@ -1,48 +1,154 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿html, body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #0077cc;
+.full-page {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body label,
+body p,
+body span,
+body div,
+body input,
+body select,
+body textarea,
+body td,
+body th,
+body li,
+body a {
+  color: #ffffff !important;
+  font-weight: normal;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.page-content a {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+.page-content a:hover {
+  color: #ccccff !important;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
+.custom-navbar {
+  background-color: #4b2e83 !important;
+  width: 100%;
 }
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: white !important;
+  font-weight: bold;
 }
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+.custom-navbar .nav-link:hover {
+  color: #ccccff !important;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  background-color: #4b2e83;
+  color: white;
+  border-top: 1px solid #3a2366;
+  padding: 10px;
+  text-align: center;
   width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+}
+
+.container, .page-content {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+form select,
+form input[type="time"],
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  background-color: #2e2e2e;
+  color: white;
+  border: 1px solid #555;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button[type="submit"] {
+  background-color: #4b2e83;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #6a45b8;
+}
+
+/* Max override for styled tables */
+table.styled-table,
+table.styled-table * {
+  all: unset;
+  display: revert;
+  box-sizing: border-box;
+}
+
+table.styled-table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 2px solid #666 !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  margin-top: 20px !important;
+  background-color: transparent !important;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+table.styled-table th,
+table.styled-table td {
+  padding: 12px 16px !important;
+  border: 1px solid #444 !important;
+  color: #fff !important;
+  vertical-align: middle !important;
+  text-align: left !important;
+}
+
+table.styled-table th {
+  background-color: #1a1a1a !important;
+  font-weight: bold !important;
+}
+
+table.styled-table tr:nth-child(odd) {
+  background-color: #2b2b2b !important;
+}
+
+table.styled-table tr:nth-child(even) {
+  background-color: #3a3a3a !important;
+}
+
+table.styled-table tr:hover {
+  background-color: #4b4b4b !important;
 }

@@ -2,7 +2,11 @@
   "Files": [
     {
       "Id": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\demlandscheduling.bundle.scp.css",
-      "PackagePath": "staticwebassets\\demlandscheduling.svgnti2ui0.bundle.scp.css"
+      "PackagePath": "staticwebassets\\demlandscheduling.94lrin00lm.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\FilterPageXML.xml",
+      "PackagePath": "staticwebassets\\FilterPageXML.xml"
     },
     {
       "Id": "C:\\Users\\Mbarn\\OneDrive\\Desktop\\ITT-490_Capstone\\WebDev\\demlandscheduling\\wwwroot\\css\\site.css",

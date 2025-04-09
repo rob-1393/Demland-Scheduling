@@ -1,103 +1,159 @@
 @page "/Filtering/FilterPage"
-@model demlandscheduling.Pages.Filtering.FilterPage  
+@model demlandscheduling.Pages.Filtering.FilterPage
 
 @{
     ViewData["Title"] = "Filter Classes";
 }
 
-<h2>Filter Classes</h2>
+<div class="page-content" style="max-width: 100%; overflow-x: auto;">
+    <h2>Filter Classes</h2>
 
-<form method="get">
-    <!-- Course Filter -->
-    <div>
-        <label for="Course">Course</label>
-        <input type="text" id="Course" name="Course" value="@Model.Filter?.Course" />
-    </div>
-
-    <!-- Teacher Description Filter -->
-    <div>
-        <label for="TeacherDescrip">Teacher</label>
-        <input type="text" id="TeacherDescrip" name="TeacherDescrip" value="@Model.Filter?.TeacherDescrip" />
-    </div>
-
-    <!-- Days Filter -->
-    <div>
-        <label for="Days">Days</label>
-        <input type="text" id="Days" name="Days" value="@Model.Filter?.Days" />
-    </div>
-
-    <!-- Start Time Filter -->
-    <div>
-        <label for="StartTime">Start Time</label>
-        <input type="time" id="StartTime" name="StartTime" value="@Model.Filter?.StartTime?.ToString("HH:mm")" />
-    </div>
-
-    <!-- End Time Filter -->
-    <div>
-        <label for="EndTime">End Time</label>
-        <input type="time" id="EndTime" name="EndTime" value="@Model.Filter?.EndTime?.ToString("HH:mm")" />
-    </div>
-
-    <!-- Teacher Email Filter -->
-    <div>
-        <label for="Email">Teacher Email</label>
-        <input type="email" id="Email" name="Email" value="@Model.Filter?.Email" />
-    </div>
-
-    <!-- SchedID Filter -->
-    <div>
-        <label for="SchedID">Schedule ID</label>
-        <input type="text" id="SchedID" name="SchedID" value="@Model.Filter?.SchedID" />
-    </div>
-
-    <!-- Delivery Method Filter -->
-    <div>
-        <label for="DeliveryMethod">Delivery Method</label>
-        <input type="text" id="DeliveryMethod" name="DeliveryMethod" value="@Model.Filter?.DeliveryMethod" />
-    </div>
-
-    <!-- Secondary Teachers Filter -->
-    <div>
-        <label for="SecondaryTeachers">Secondary Teachers</label>
-        <input type="text" id="SecondaryTeachers" name="SecondaryTeachers" value="@Model.Filter?.SecondaryTeachers" />
-    </div>
-
-    <!-- Class Start Date Filter -->
-    <div>
-        <label for="ClassStart">Class Start Date</label>
-        <input type="date" id="ClassStart" name="ClassStart" value="@Model.Filter?.ClassStart?.ToString("yyyy-MM-dd")" />
-    </div>
-
-    <!-- Class End Date Filter -->
-    <div>
-        <label for="ClassEnd">Class End Date</label>
-        <input type="date" id="ClassEnd" name="ClassEnd" value="@Model.Filter?.ClassEnd?.ToString("yyyy-MM-dd")" />
-    </div>
-
-    <!-- Class Schedule Description Filter -->
-    <div>
-        <label for="ClassSchedDescrip">Class Schedule Description</label>
-        <input type="text" id="ClassSchedDescrip" name="ClassSchedDescrip" value="@Model.Filter?.ClassSchedDescrip" />
-    </div>
-
-    <div>
-        <button type="submit">Filter</button>
-    </div>
-</form>
-
-@if (Model.Classes != null && Model.Classes.Any())
-{
-    <h3>Filtered Classes</h3>
-    <ul>
-        @foreach (var item in Model.Classes)
-        {
-            <li>
-                @item.Course - @item.Section - @item.TeacherDescrip - @item.StartTime - @item.EndTime
-            </li>
-        }
-    </ul>
+<style>
+.page-content {
+    max-width: 100%;
+    overflow-x: auto;
 }
-else
-{
-    <p>No classes found with the specified filters.</p>
+
+/* Final, refined table styling */
+table.styled-table {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border: 2px solid #666 !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    margin-top: 20px !important;
+    background-color: transparent !important;
+    font-size: 0.95rem; /* 👈 Slightly smaller text for better fit */
 }
+
+table.styled-table th,
+table.styled-table td {
+    padding: 12px 16px !important;
+    border: 1px solid #444 !important;
+    color: #fff !important;
+    vertical-align: top !important;
+    text-align: left !important;
+    white-space: nowrap !important; /* 👈 Prevents line breaks */
+}
+
+table.styled-table th {
+    background-color: #1a1a1a !important;
+    font-weight: bold !important;
+}
+
+table.styled-table tr:nth-child(odd) {
+    background-color: #2b2b2b !important;
+}
+
+table.styled-table tr:nth-child(even) {
+    background-color: #3a3a3a !important;
+}
+
+table.styled-table tr:hover {
+    background-color: #4b4b4b !important;
+}
+</style>
+
+    <form method="get">
+        <!-- Course Filter -->
+        <div>
+            <label for="Course">Course</label>
+            <select id="Course" name="Course">
+                <option value="">Select Course</option>
+                @if (ViewData["Courses"] != null)
+                {
+                    var courses = ViewData["Courses"] as List<string>;
+                    if (courses != null)
+                    {
+                        @foreach (var course in courses)
+                        {
+                            <option value="@course" selected="@((course == Model.Filter?.Course) ? "selected" : "")">@course</option>
+                        }
+                    }
+                }
+            </select>
+        </div>
+
+        <!-- Teacher Description Filter -->
+        <div>
+            <label for="TeacherDescrip">Teacher</label>
+            <select id="TeacherDescrip" name="TeacherDescrip">
+                <option value="">Select Teacher</option>
+                @if (ViewData["Teachers"] != null)
+                {
+                    var teachers = ViewData["Teachers"] as List<string>;
+                    if (teachers != null)
+                    {
+                        @foreach (var teacher in teachers)
+                        {
+                            <option value="@teacher" selected="@((teacher == Model.Filter?.TeacherDescrip) ? "selected" : "")">@teacher</option>
+                        }
+                    }
+                }
+            </select>
+        </div>
+
+        <!-- Start Time Filter -->
+        <div>
+            <label for="StartTime">Start Time</label>
+            <input type="time" id="StartTime" name="StartTime" value="@Model.Filter?.StartTime?.ToString("HH:mm")" />
+        </div>
+
+        <!-- End Time Filter -->
+        <div>
+            <label for="EndTime">End Time</label>
+            <input type="time" id="EndTime" name="EndTime" value="@Model.Filter?.EndTime?.ToString("HH:mm")" />
+        </div>
+        
+        <div>
+            <button type="submit">Filter</button>
+        </div>
+    </form>
+
+    @if (Model.Classes != null && Model.Classes.Any())
+    {
+        <h3 class="mt-4">Filtered Classes</h3>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                    <th>Days</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Email</th>
+                    <th>Sched ID</th>
+                    <th>Delivery Method</th>
+                    <th>Secondary Teachers</th>
+                    <th>Class Start</th>
+                    <th>Class End</th>
+                    <th>Class Schedule Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Classes.Select((value, index) => new { value, index }))
+                {
+                    <tr>
+                        <td>@item.value.Course</td>
+                        <td>@item.value.TeacherDescrip</td>
+                        <td>@item.value.Days</td>
+                        <td>@item.value.StartTime</td>
+                        <td>@item.value.EndTime</td>
+                        <td>@item.value.Email</td>
+                        <td>@item.value.SchedID</td>
+                        <td>@item.value.DeliveryMethod</td>
+                        <td>@item.value.SecondaryTeachers</td>
+                        <td>@item.value.ClassStart</td>
+                        <td>@item.value.ClassEnd</td>
+                        <td>@item.value.ClassSchedDescrip</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No classes found with the specified filters.</p>
+    }
+</div>
