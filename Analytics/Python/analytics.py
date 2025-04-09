@@ -654,11 +654,7 @@ def main():
 
     # projects the excel data forward and returns a pandas dataframe
     print("Begin projection...")
-<<<<<<< HEAD
     projected_classes = project_classes(temp_excel_data, num_of_semesters, provided_date)
-=======
-    projected_classes = project_classes(temp_excel_data, num_of_semesters)
->>>>>>> 7d0be3e6005df64b20662423bdd8301872caae57
     #export_xml(projected_classes, "step1_project_classes")
     
     # assign a professor for each class in the projected data
