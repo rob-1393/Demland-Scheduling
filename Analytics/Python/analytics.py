@@ -125,7 +125,7 @@ def get_semester_end(year, month) -> list:
         print("error: something bad happened")
         return
 
-def get_next_semester() -> list:
+def get_next_semester(provided_date) -> list:
     """
     Returns the date of the incoming semester based on when this program is run
     """
@@ -134,7 +134,8 @@ def get_next_semester() -> list:
     current_semester = str(date.today())
 
     # can uncomment and set this date to anything for demonstration purposes
-    #current_semester = "2025-09-01"
+    if provided_date is not None:
+        current_semester = provided_date
 
     # sets the start month of the spring and fall semesters, this can 
     # be added onto later, but the logic below will have to change
@@ -348,7 +349,7 @@ def schedule_class(row, semester_start, semester_end, prof_name, start_time, end
 
             ]
 
-def project_classes(excel_data, num_of_semesters) -> pd:
+def project_classes(excel_data, num_of_semesters, provided_date) -> pd:
     """
     Project Classes Forward
     """
@@ -356,7 +357,7 @@ def project_classes(excel_data, num_of_semesters) -> pd:
     projected_data = pd.DataFrame(columns=get_column_order() )
 
     # retrieve the current semester based on when this script is run
-    semester_start = get_next_semester()
+    semester_start = get_next_semester(provided_date)
 
     # retrieve the maximum amount of classes that should be scheduled 
     # each semester based on previous data
@@ -641,22 +642,25 @@ def main():
         print("error: No excel data found")
         return
     
+    # create a copy of the original data to avoid accidental alteration
+    temp_excel_data = excel_data.copy()
+
     # change how many semesters we want to project in advance
     num_of_semesters = 3
     print(f"Project the schedule {num_of_semesters} semesters in advance.\n")
 
-    # create a copy of the original data to avoid accidental alteration
-    temp_excel_data = excel_data.copy()
+    # Provide a date for the program to run in
+    provided_date = None
 
     # projects the excel data forward and returns a pandas dataframe
     print("Begin projection...")
-    projected_classes = project_classes(temp_excel_data, num_of_semesters)
-    export_xml(projected_classes, "step1_project_classes")
+    projected_classes = project_classes(temp_excel_data, num_of_semesters, provided_date)
+    #export_xml(projected_classes, "step1_project_classes")
     
     # assign a professor for each class in the projected data
     print("Begin assigning professors...")
     assigned_prof_classes = assign_profs(temp_excel_data, projected_classes)
-    export_xml(assigned_prof_classes, "step2_assign_professors")
+    #export_xml(assigned_prof_classes, "step2_assign_professors")
     print("Assigned professors.\n")
     
     # 
@@ -672,7 +676,7 @@ def main():
     
     # This was something i used a lot during testing, it copied the whole output to my clipboard.
     # it did have issues when using it on Linux, so use it if you want.
-    schedule.to_clipboard(index=False)
+    #schedule.to_clipboard(index=False)
 
     # export the dataframe to an XML file located under /exports
     print("\nExporting schedule to XML...")
