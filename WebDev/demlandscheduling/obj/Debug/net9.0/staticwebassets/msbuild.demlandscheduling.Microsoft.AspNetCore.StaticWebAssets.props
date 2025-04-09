@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rjxmxbigzq</Fingerprint>
-      <Integrity>qb8+WmlBX8jsUpi4kvStJMcjk1VuAZ1v/oi8jSpPTTA=</Integrity>
+      <Fingerprint>4rdtq7z2zs</Fingerprint>
+      <Integrity>4HBIfkROWw1R3DA2c7b8Xh6CI88H4OLI7wSvcEooDHE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FilterPageXML.xml'))</OriginalItemSpec>

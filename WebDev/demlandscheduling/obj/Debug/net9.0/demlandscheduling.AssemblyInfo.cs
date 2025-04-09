@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("demlandscheduling")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4658ed8cc323a591a71c58bb982c45938a50121e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3222f3202bc0b073e4d6852c00128fb0c97d22f")]
 [assembly: System.Reflection.AssemblyProductAttribute("demlandscheduling")]
 [assembly: System.Reflection.AssemblyTitleAttribute("demlandscheduling")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

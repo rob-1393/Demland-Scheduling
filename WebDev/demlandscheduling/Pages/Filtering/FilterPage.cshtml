@@ -13,8 +13,9 @@
     max-width: 100%;
     overflow-x: auto;
 }
+/* Above defines the Razor page to be an available route and binds the pagemodel to FilterPage.cshmtl.cs which contains all of our data and filtering logic. */
 
-/* Final, refined table styling */
+/* Below stylizes the visual fortmatting of the class table that would be located in the Filter Classes page when running the page. */
 table.styled-table {
     width: 100% !important;
     border-collapse: separate !important;
@@ -24,7 +25,7 @@ table.styled-table {
     overflow: hidden !important;
     margin-top: 20px !important;
     background-color: transparent !important;
-    font-size: 0.95rem; /* 👈 Slightly smaller text for better fit */
+    font-size: 0.95rem;
 }
 
 table.styled-table th,
@@ -34,7 +35,7 @@ table.styled-table td {
     color: #fff !important;
     vertical-align: top !important;
     text-align: left !important;
-    white-space: nowrap !important; /* 👈 Prevents line breaks */
+    white-space: nowrap !important;
 }
 
 table.styled-table th {
@@ -53,6 +54,8 @@ table.styled-table tr:nth-child(even) {
 table.styled-table tr:hover {
     background-color: #4b4b4b !important;
 }
+
+/* Below, the code builds a filter form that allows the user to search for classes. In which if the user clicks our implemented Filter button, it will have the form send the selected values to the server so it can show matching results */
 </style>
 
     <form method="get">
@@ -110,7 +113,7 @@ table.styled-table tr:hover {
             <button type="submit">Filter</button>
         </div>
     </form>
-
+    <!-- Checks to see if there are any filtered class results from the backend. If there is data, it will display them in our styled table. If not, it will show message that no results were found. -->
     @if (Model.Classes != null && Model.Classes.Any())
     {
         <h3 class="mt-4">Filtered Classes</h3>

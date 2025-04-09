@@ -22,3 +22,5 @@ namespace demlandscheduling.Data
         }
     }
 }
+//ApplicationDbContext.cs is used as a Entity Framework Core database context. Where it acts as a bridge between the C# and SQL Server Database.
+//Thus allowing the Razor Pages to either retrieve, insert, update, delete any data from the database.
